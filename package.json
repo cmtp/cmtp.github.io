@@ -5,6 +5,7 @@
     "main": "index.html",
     "scripts": {
         "test": "test",
+        "dev": "vuepress dev",
         "build": "vuepress build",
         "dev-server": "lite-server --baseDir=.vuepress/dist",
         "publish": "push-dir --dir=.vuepress/dist --branch=master --cleanup"

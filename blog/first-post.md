@@ -7,5 +7,3 @@ description:
 
 # Primer post
 
-![An image](./images/logo.png)
-
