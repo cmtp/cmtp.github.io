@@ -7,7 +7,7 @@
     "test": "test",
     "build": "vuepress build docs",
     "dev-server": "lite-server --baseDir='.vuepress/dist'",
-    "publish": "push-dir --dir=.vuepress/dist --branch=gh-pages --cleanup"
+    "publish": "push-dir --dir='.vuepress/dist' --branch=gh-pages --cleanup"
   },
   "repository": {
     "type": "git",
