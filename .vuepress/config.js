@@ -1,5 +1,5 @@
 module.exports = {
-    base: 'https://cmtp.github.io',
+    base: 'cmtp.github.io',
     title: 'Outreach Shame',
     themeConfig: {
         nav: [
