@@ -19,4 +19,10 @@ export default {
     margin: auto;
     
 }
+@media (min-width: 640px) and (max-width: 840px) {
+    
+}
+@media (min-width: 841px) and (max-width: 1024px) {
+    
+}
 </style>
