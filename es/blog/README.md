@@ -6,4 +6,4 @@ blog_index: true
 
 Bienvenidos al blog de Christian
 
-<BlogIndex />
+<BlogIndex language="es" />

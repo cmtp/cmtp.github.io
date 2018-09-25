@@ -1,5 +1,6 @@
 <template>
 <div>
+    {{$site.pages}}
     <div v-for="post in posts">
         <h2>
             <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
@@ -14,8 +15,16 @@
 
 <script>
 export default {
+    props: [
+        'language'
+    ],
     computed: {
         posts() {
+            if (this.language === 'es') {
+                return this.$site.pages
+                .filter(x => x.path.startsWith('/es/blog/') && !x.frontmatter.blog_index)
+                .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+            }
             return this.$site.pages
                 .filter(x => x.path.startsWith('/blog/') && !x.frontmatter.blog_index)
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
