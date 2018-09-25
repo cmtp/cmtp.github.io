@@ -1,6 +1,5 @@
 <template>
 <div>
-    {{$site.pages}}
     <div v-for="post in posts">
         <h2>
             <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>

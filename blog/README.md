@@ -4,6 +4,6 @@ blog_index: true
 
 # Blog
 
-Bienvenidos al blog de Christian
+Welcome to Christian's Blog
 
 <BlogIndex />
