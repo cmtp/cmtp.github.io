@@ -6,4 +6,4 @@ blog_index: true
 
 Welcome to Christian's Blog
 
-<BlogIndex />
+<RecentContent language="en"/>

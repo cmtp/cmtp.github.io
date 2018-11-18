@@ -2,7 +2,7 @@
     "name": "blog",
     "version": "1.0.0",
     "description": "this is a blog with vuepress",
-    "main": "index.html",
+    "main": "index.js",
     "scripts": {
         "test": "test",
         "dev": "vuepress dev",
