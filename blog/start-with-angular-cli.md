@@ -1,6 +1,6 @@
 ---
 title: Start with Angular CLI
-date: 2018-09-25
+date: 2018-11-17
 author: Christian Tola
 description:
     Angular CLI is a great tool, it allows to generate a new project and optimizing our workflow with angular, a very necessary tool for web development.
