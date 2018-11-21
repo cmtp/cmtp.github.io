@@ -10,7 +10,7 @@ tags: [code, patterns]
 
 # Código Limpio parte 1
 
-
+*Este es el primer articulo de la serie de código limpio donde iremos agregando consejos de como mejorar nuestro código.*
 
 ¿Que es el código limpio? ¿Por que deberíamos escribir código limpio?, primero revisemos las bases sobre que es código limpio.
 
