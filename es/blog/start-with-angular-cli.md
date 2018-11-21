@@ -76,3 +76,5 @@ Luego navegamos a la url [http://localhost:4200](http://localhost:4200) para ing
 ![Angular first page](./images/iniciando-con-angular-cli/angular-first-page.jpg)
 
 En siguientes post veremos aun mas sobre las herramientas que nos ofrece el Angular CLI, hasta Pronto!
+
+<Disqus />

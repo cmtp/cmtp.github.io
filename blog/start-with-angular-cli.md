@@ -75,3 +75,5 @@ after that, go to the url [http://localhost:4200](http://localhost:4200) to see 
 ![Angular first page](./images/iniciando-con-angular-cli/angular-first-page.jpg)
 
 In the next posts we are going to see more tools of Angular CLI, See you!
+
+<Disqus />

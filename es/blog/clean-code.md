@@ -1,5 +1,5 @@
 ---
-title: Código Limpio
+title: Código Limpio parte 1
 date: 2018-11-18
 author: Christian Tola
 description:
@@ -8,7 +8,9 @@ description:
 tags: [code, patterns]
 ---
 
-# Código Limpio
+# Código Limpio parte 1
+
+
 
 ¿Que es el código limpio? ¿Por que deberíamos escribir código limpio?, primero revisemos las bases sobre que es código limpio.
 
@@ -20,15 +22,57 @@ Existen varias definiciones, y a mi parecer todas son correctas, una de las mas 
 
 El código limpio es simple, y elegante, debe ser sencillo de leer, fácil de extender.
  
-Veamos como escribir codigo limpio.
+Veamos como escribir código limpio.
 
 ## Nombres con Sentido
 
-se deben usar nombres que revelen las intenciones
+Se deben usar nombres que revelen las intenciones, estos nombres si bien son validos, no brindan información util al desarrollador.
 
 ```ts
-// typescript
-d: number;
-//javascript
-let d;
+// Mal Código
+let d; // Este tipo de nombres no ofrecen ningún tipo de información sobre su uso.
+let ac;
+let d12;
+let theList; // Este nombre es muy genérico, también colocar el tipo (List) en el nombre puede llevar a confusiones.
+const M;
+// Código Limpio
+let remainingDate;
+let userAccountInformation;
+let userAccounts;
+const HTTP_METHODS;
 ```
+
+Evitar nombres con variaciones mínimas, estos nombres agregan ruido al momento de realizar una búsqueda de alguna clase especifica, método, o variable.
+
+```ts
+/** 
+ * Ambos nombres son parecidos pero no iguales, esto puede generar confusión 
+ * para el desarrollador 
+**/
+export default class XYZControllerForEfficientHandlingOfStrings {
+    ...
+}
+export default class XYZControllerForEfficientStorageOfStrings {
+    ...
+}
+```
+
+Usar nombres que se puedan buscar, que sean fáciles de pronunciar. 
+
+```ts
+// variables
+let accounts;
+let accountsInformation;
+let billingAccount;
+let mailingRecipients;
+
+// functions
+printBillingInformation() {
+    ...
+}
+
+addNewCustomer() {
+    ...
+}
+```
+<Disqus />
