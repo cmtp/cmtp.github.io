@@ -57,7 +57,7 @@ export default class XYZControllerForEfficientStorageOfStrings {
 }
 ```
 
-Usar nombres que se puedan buscar, que sean fáciles de pronunciar. 
+Usar nombres que se puedan buscar y que sean fáciles de pronunciar. 
 
 ```ts
 // variables
@@ -75,4 +75,8 @@ addNewCustomer() {
     ...
 }
 ```
+Cuando nombramos funciones el método debe revelar su implementación, no debería ser necesario revisar todo el método si el nombre esta bien escrito
+
+Evite usar codificaciones, no por que este trabajando en el modulo de **XYZ** el nombre de todos los controladores sera *XYZ-AccountController*, *XYZ-UserController*, etc. esto ocasiona que el desarrollador tenga que aprender.
+
 <Disqus />
