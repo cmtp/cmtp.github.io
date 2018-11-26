@@ -1,5 +1,5 @@
 ---
-title: Código Limpio parte 1
+title: Código Limpio
 date: 2018-11-18
 author: Christian Tola
 description:
@@ -77,6 +77,12 @@ addNewCustomer() {
 ```
 Cuando nombramos funciones el método debe revelar su implementación, no debería ser necesario revisar todo el método si el nombre esta bien escrito
 
-Evite usar codificaciones, no por que este trabajando en el modulo de **XYZ** el nombre de todos los controladores sera *XYZ-AccountController*, *XYZ-UserController*, etc. esto ocasiona que el desarrollador tenga que aprender.
+Evite usar codificaciones en los nombres, de por si un desarrollador revisara código de otras personas, agregar una codificación adicional solo retrasara al desarrollador, un ejemplo, una empresa "X" utiliza A01254 para identificar a un tipo de clases que están relacionadas con una sección de reportes de las actividades de los usuarios y A01253 para la información almacenada de los usuarios, todas las clases relacionadas a este sistema se nombran de la siguiente manera *A01254-controller o A01253-controller*, para entender a que modulo pertenece cada clase la empresa brinda un diccionario de los códigos, En lugar de ello es mucho mas fácil de entender y mas rapido de encontrar, cuando se utiliza *ReportUserController ReportUserInformationController.*
+
+Aqui terminamos esta primera parte de codigo limpio, en articulos posteriores veremos algunos ejemplos mas de como mejorar nuestro codigo.
+
+Si gustan buscar mas informacion sobre como escribir codigo limpio les recomiendo el libro *"Clean Code: A handbook of Agile Software Craftsmanship"* the Robert C. Martin
+
+Adios!
 
 <Disqus />
