@@ -1,6 +1,6 @@
 ---
 title: Código Limpio
-date: 2018-11-18
+date: 2018-11-26
 author: Christian Tola
 description:
     Que es el código limpio? por que deberíamos escribir código limpio?
