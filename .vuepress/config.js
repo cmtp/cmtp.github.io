@@ -1,5 +1,5 @@
 module.exports = {
-    base: 'cmtp.github.io',
+    // base: 'cmtp.github.io',
     themeConfig: {
         locales: {
             '/': {
