@@ -1,5 +1,5 @@
 module.exports = {
-    base: 'cmtp.github.io',
+    // base: 'cmtp.github.io',
     themeConfig: {
         locales: {
             '/': {
@@ -21,7 +21,8 @@ module.exports = {
                 algolia: {},
                 nav: [
                     { text: 'Home', link: '/' },
-                    { text: 'Blog', link: '/blog/' }
+                    { text: 'Blog', link: '/blog/' },
+                    { text: 'About', link: '/about/' }
                 ],
                 //   sidebar: {
                 //     '/': [/* ... */],
@@ -41,7 +42,8 @@ module.exports = {
                 },
                 nav: [
                     { text: 'Inicio', link: '/es/' },
-                    { text: 'Blog', link: '/es/blog/' }
+                    { text: 'Blog', link: '/es/blog/' },
+                    { text: 'Sobre mi', link: '/es/about/' }
                 ],
                 algolia: {},
                 //   sidebar: {
