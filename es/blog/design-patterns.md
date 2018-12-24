@@ -74,3 +74,73 @@ Tiene como objetivo separar los aspectos conceptuales de una jerarquía de clase
 #### Composite
 
 Proporciona un marco de diseño de una composición de objetos con una profundidad de composición variable, basándose en el diseño de un árbol.
+
+#### Decorator
+
+Permite agregar dinamicamente funcionalidades suplementarias a un objeto.
+
+#### Facade
+
+Tiene como objetivo reagrupar las interfaces de un conjunto de objetos en una interfaz unificada que resulte mas fácil de utilizar.
+
+#### Flyweight
+
+Facilita la comparticion de un conjunto importante de objetos con granularidad muy fina.
+
+#### Proxy
+
+Construye un objeto que se substituye por otro objeto y que controla su acceso.
+
+### Patrones de Comportamiento
+
+Proporcionan soluciones para organizar las interacciones y para repartir el procesamiento entre los objetos.
+
+#### Chain of Responsibility
+
+Crea una cadena de objetos tal que si un objeto de la cadena no puede responder a una petición, la pueda transmitir a sus sucesores hasta que uno de ellos responda.
+
+#### Command
+
+Tiene como objetivo transformar una consulta en un objeto, facilitando operaciones como la anulación, la actualización de consultas y su seguimiento.
+
+#### Interpreter
+
+Proporciona un marco para dar una representación mediante objetos de la gramática de un lenguaje con el objetivo de evaluar, interpretando las expresiones escritas en este lenguaje.
+
+#### Iterator
+
+Proporciona un acceso secuencial a una colección de objetos sin que los clientes se preocupen de la implementación de esta colección.
+
+#### Mediator
+
+Construye un objeto cuya vocación es la gestión y el control de las interacciones en el seno de un conjunto de objetos sin que estos elementos se conozcan mutuamente.
+
+#### Memento
+
+Salvaguarda y restaura el estado de un objeto.
+
+#### Observer
+
+Construye una dependencia entre un sujeto y sus observadores de modo que cada modificación del sujeto sea notificada a los observadores para que puedan actualizar su estado.
+
+#### State
+
+Permite a un objeto adaptar su comportamiento en función a su estado interno.
+
+#### Strategy
+
+Adapta el comportamiento y los algoritmos de un objeto en función de una necesidad concreta sin para ello cargar las interacciones con los clientes de este objeto.
+
+#### Template Method
+
+Permite reportar en las subclases ciertas etapas de una de las operaciones de un objeto, estando estas descritas en las subclases.
+
+#### Visitor
+
+Construye una operación a realizar en los elementos de un conjunto de objetos. Es posible agregar nuevas operaciones sin modificar las clases de estos objetos.
+
+En siguientes artículos estudiaremos los patrones de diseño y como utilizarlos, que tengan un buen dia.
+
+Saludos.
+
+<Disqus />
