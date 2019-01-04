@@ -20,7 +20,58 @@ Veamos algunos de los comandos mas útiles:
 
 Para generar un nuevo proyecto de angular utilizamos el comando ***ng new*** y asignándole un nombre al proyecto a generar y las opciones a utilizar
 
-```cli
+```bash
 ng new <name> <options>
 ```
 
+Cada comando en angular tiene una lista de opciones que se pueden usar a continuación, para ver la lista de comandos utilice el flag --help luego del nombre del proyecto
+```bash
+# Lista la ayuda disponible y la lista de todas las opciones del comando utilizado
+ng new <name> --help
+```
+
+Las opciones mas importantes las describiremos a continuación:
+
+#### --dry-run
+
+Cuando ejecutamos el comando new (o cualquier otro comando) con este flag activo, no se realizan cambios reales dentro del proyecto, este comando nos permite ver las modificaciones que realizara, esto es util para ver que generara el CLI, y comprobar si es lo que se espera.
+
+```bash
+# sintax
+ng new <name> --dry-run
+# sample
+ng new my-app --dry-run
+```
+El resultado es el siguiente:
+
+![ng new my-app --dry-run](./images/angular-cli-commands/dry-run.jpg)
+
+Al final un warning nos dice que no se ha ejecutado ningún cambio.
+
+#### --inline
+```bash
+# Options
+--dry-run # Permite correr cualquier comando sin realizar ningun cambio, util para ver los resultados de un comando sin ejecutarlo
+--collection
+--commit
+--create-application
+--defaults
+--directory
+--dry-run
+--experimental-ivy
+--force
+--help
+--inline-style
+--inline-template
+--interactive
+--minimal
+--new-project-root
+--prefix
+--routing
+--skip-git
+--skip-install
+--skip-tests
+--style
+--verbose
+--view-encapsulation
+```
