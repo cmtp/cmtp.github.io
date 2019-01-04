@@ -3,47 +3,47 @@ module.exports = {
     themeConfig: {
         locales: {
             '/': {
-                title: 'My Site ',
+                title: 'Mi sitio',
                 // text for the language dropdown
-                selectText: 'Languages',
+                selectText: 'Idiomas',
                 // label for this locale in the language dropdown
-                label: 'English',
+                label: 'Español',
                 // text for the edit-on-github link
                 //   editLinkText: 'Edit this page on GitHub',
                 // config for Service Worker 
                 serviceWorker: {
                     updatePopup: {
-                        message: "New content is available.",
-                        buttonText: "Refresh"
+                        message: "Nuevo contenido disponible.",
+                        buttonText: "Recargar"
                     }
                 },
                 // algolia docsearch options for current locale
                 algolia: {},
                 nav: [
-                    { text: 'Home', link: '/' },
+                    { text: 'Inicio', link: '/' },
                     { text: 'Blog', link: '/blog/' },
-                    { text: 'About', link: '/about/' }
+                    { text: 'Sobre mi', link: '/about/' }
                 ],
                 //   sidebar: {
                 //     '/': [/* ... */],
                 //     '/nested/': [/* ... */]
                 //   }
             },
-            '/es/': {
-                title: 'Mi Sitio ',
-                selectText: 'Idiomas',
-                label: 'Español',
+            '/en/': {
+                title: 'My Syte',
+                selectText: 'Languages',
+                label: 'English',
                 //   editLinkText: '在 GitHub 上编辑此页',
                 serviceWorker: {
                     updatePopup: {
-                        message: "Nuevo contenido esta disponible.",
-                        buttonText: "Recargar"
+                        message: "New content is available.",
+                        buttonText: "Refresh"
                     }
                 },
                 nav: [
-                    { text: 'Inicio', link: '/es/' },
-                    { text: 'Blog', link: '/es/blog/' },
-                    { text: 'Sobre mi', link: '/es/about/' }
+                    { text: 'Home', link: '/en/' },
+                    { text: 'Blog', link: '/en/blog/' },
+                    { text: 'About', link: '/en/about/' }
                 ],
                 algolia: {},
                 //   sidebar: {
@@ -66,14 +66,14 @@ module.exports = {
         // The key is the path for the locale to be nested under.
         // As a special case, the default locale can use '/' as its path.
         '/': {
-            lang: 'en-US', // this will be set as the lang attribute on <html>
+            lang: 'es-ES', // this will be set as the lang attribute on <html>
             title: `christiantola.dev`,
-            description: `Vue-powered Christian's Blog`
+            description: `Blog de Christian hecho en Vue`
         },
-        '/es/': {
-            lang: 'es-ES',
+        '/en/': {
+            lang: 'en-US',
             title: 'christiantola.dev',
-            description: 'Blog de Christian hecho en Vue'
+            description: `Vue-powered Christian's Blog`
         }
     }
 }

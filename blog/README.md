@@ -4,6 +4,6 @@ blog_index: true
 
 # Blog
 
-Welcome to Christian's Blog
+Bienvenidos al blog de Christian
 
-<RecentContent language="en"/>
+<BlogIndex language="es" />

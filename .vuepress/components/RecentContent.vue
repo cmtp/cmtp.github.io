@@ -27,9 +27,9 @@ export default {
 	computed:{
 		recentFiles() {
 			let files = this.$site.pages.filter(p => {
-                if( this.language === 'es')
-				    return p.path.indexOf('/es/blog/') >= 0 && p.title !== 'Blog';
-                return p.path.indexOf('/blog/') >= 0 && p.path.indexOf('/es/') < 0 && p.title !== 'Blog';
+                if( this.language === 'en')
+				    return p.path.indexOf('/en/blog/') >= 0 && p.title !== 'Blog';
+                return p.path.indexOf('/blog/') >= 0 && p.path.indexOf('/en/') < 0 && p.title !== 'Blog';
 			}).sort((a,b) => {
 				let aDate = new Date(a.frontmatter.published).getTime();
 				let bDate = new Date(b.frontmatter.published).getTime();

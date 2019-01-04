@@ -1,12 +1,13 @@
 ---
+title: Blog de Christian
 layout: HomeLayout
 ---
-# Javascript Development, Angular, Vue, React and More.
 
+# Desarrollo Javascript, Angular, Vue, React, y Más
 
-My name is Christian Marcelo, Javascript Developer, System Engineer, crazy about Programming.
+Mi nombre es Christian Marcelo, Desarrollador Javascript, Ingeniero de Sistemas, Apasionado de la programación.
 
-Always, I like to write, so I write this blog in order to share all that I will learn, and help people with the same problems that I have or had in my path to get better developer. 
+Siempre me a encantado escribir, asi que escribo este blog para compartir Todo lo que aprendo, y ayudar a la gente que tiene los mismos problemas que tengo o tuve en mi recorrido para ser un mejor desarrollador.
 
-## Last articles
+## Últimos artículos
 <RecentContent/>

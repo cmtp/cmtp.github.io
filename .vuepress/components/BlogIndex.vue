@@ -19,9 +19,9 @@ export default {
     ],
     computed: {
         posts() {
-            if (this.language === 'es') {
+            if (this.language === 'en') {
                 return this.$site.pages
-                .filter(x => x.path.startsWith('/es/blog/') && !x.frontmatter.blog_index)
+                .filter(x => x.path.startsWith('/en/blog/') && !x.frontmatter.blog_index)
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
             }
             return this.$site.pages
@@ -29,10 +29,10 @@ export default {
                 .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
         },
         readMoreText() {
-            if (this.language === 'es') {
-                return 'Leer más'
+            if (this.language === 'en') {
+                return 'Read more'
             }
-            return 'Read more'
+            return 'Leer más'
         }
     }
 }

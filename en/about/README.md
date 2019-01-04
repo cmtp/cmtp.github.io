@@ -8,3 +8,5 @@ Tengo 27 años, Desarrollador de Software hace mas de 6, Mis pasatiempos?, jugar
 
 Me encanta enseñar, trabaje durante un año como profesor en una escuela dando clases de programación, Me encanta aprender, siempre hay algo nuevo y me encanta estar probando código y ver que ocurre.
 
+Desde el 2013 empece a trabajar como desarrollador de software, primeramente realizaba aplicaciones de escritorio con Java y JavaSwing y luego aplicaciones web con PHP.
+

@@ -1,55 +1,56 @@
 ---
-title: Start with Angular CLI
-date: 2018-11-17
+title: Iniciando con Angular CLI
+date: 2018-11-20
 author: Christian Tola
 description:
-    Angular CLI is a great tool, it allows to generate a new project and optimizing our workflow with angular, a very necessary tool for web development.
+    Angular CLI es una herramienta muy funcional, permite generar un nuevo proyecto y optimizar nuestro flujo de trabajo con angular, una herramienta muy necesaria para el desarrollo web usando angular.
 tags: [Angular, Angular-CLI, CLI]
 ---
 
-# Start with Angular CLI
+# Iniciando con Angular CLI
 
-Welcome, In this post we are going to review the advantages of use Angular CLI in our workflow.
+Bienvenidos, en este post veremos las ventajas de utilizar Angular CLI dentro de nuestro flujo de trabajo
 
-![Angular CLI commands](./images/iniciando-con-angular-cli/cli-logo.svg)
+![Angular CLI comandos](./images/iniciando-con-angular-cli/cli-logo.svg)
 
-## What is Angular CLI?
+## Que es Angular CLI?
 
-Angular CLI allows to create the structure if Angular application, generate services, components, modules, routes, and more, easily and fast.
+Angular CLI es una herramienta que nos permite crear la estructura de una aplicación Angular, generar servicios, componentes, módulos, rutas, etc de manera rápida y sencilla.
 
-## Install
+## Instalación
 
-What we need to start? Have nodejs installed and npm updated. To install nodejs we can go to [https://nodejs.org](https://nodejs.org).
+Que necesitamos? tener nodejs instalado y npm actualizado. Para la instalación de nodejs nos dirigimos a [https://nodejs.org](https://nodejs.org).
 
-When node.js has been already installed, we need to update our npm:
+Una vez tengamos node instalado, actualizamos nuestro gestor de paquetes de node con el siguiente comando :
 
 ```javascript
-npm install -g npm // npm update
-node --version // verify node version
-npm --version // verify npm version
+npm install -g npm // actualización de npm, puede tardar unos minutos
+node --version // verificamos nuestra version de node
+npm --version // verificamos la version de npm
 ```
 
-Verify that node and npm was updated.
+Verificamos que la version de node y npm sea la ultima antes de continuar.
 
-Install Angular CLI is very easy, on the terminal put the next code and press Enter.
+La instalación es muy sencilla, dentro de la linea de comandos ingresamos el siguiente comando y presionamos Enter.
 
 ```javascript
 npm install -g @angular/cli
 ```
 
-To verify that the was installed successfully, run the command:
+Una vez finalizado comprobaremos que la instalación se efectuó correctamente con el siguiente comando.
 
 ```javascript
 ng --version
 ```
+veremos el siguiente mensaje
 
 ![Angular CLI Version](./images/iniciando-con-angular-cli/angular-cli-version.jpg)
 
-And does it! Our Angular CLI was installed correctly.
+Y asi nos aseguramos que nuestro Angular CLI se instalo correctamente.
 
-## Commands
+## Comandos principales.
 
-Here we have a list of more important commands to use with Angular CLI.
+Aquí una lista de los comandos mas importantes para empezar.
 
 ```javascript
 ng help // lista de comandos disponibles
@@ -60,9 +61,9 @@ ng e2e // ejecuta los test end-to-end usando Protractor
 ng build // Genera un compilado, minificado del código.
 ```
 
-## Create a new project
+## Creando un nuevo Proyecto
 
-To create a new project we only need to use the next commands in order:
+Para crear un nuevo proyecto de Angular es tan sencillo como ejecutar los siguientes comandos:
 
 ```Javascript
 ng new my-project
@@ -70,10 +71,10 @@ cd my-project
 ng serve
 ```
 
-after that, go to the url [http://localhost:4200](http://localhost:4200) to see the application, you can see something like that:
+Luego navegamos a la url [http://localhost:4200](http://localhost:4200) para ingresar a la aplicación, el resultado se vera igual a la siguiente imagen:
 
 ![Angular first page](./images/iniciando-con-angular-cli/angular-first-page.jpg)
 
-In the next posts we are going to see more tools of Angular CLI, See you!
+En siguientes post veremos aun mas sobre las herramientas que nos ofrece el Angular CLI, hasta Pronto!
 
 <Disqus />
