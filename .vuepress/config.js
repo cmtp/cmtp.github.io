@@ -1,5 +1,6 @@
 module.exports = {
     // base: 'cmtp.github.io',
+    serviceWorker: true,
     themeConfig: {
         locales: {
             '/': {
