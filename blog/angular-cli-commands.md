@@ -48,21 +48,43 @@ El resultado es el siguiente:
 
 Al final un warning nos dice que no se ha ejecutado ningún cambio.
 
-#### --inline
+#### --inline-style, --inline-template
+
+Los flags --inline permiten agregar los estilos o los template directamente dentro del componente.
+
 ```bash
-# Options
---dry-run # Permite correr cualquier comando sin realizar ningun cambio, util para ver los resultados de un comando sin ejecutarlo
+# estilos en linea
+ng new <name> --inline-style
+# templates en linea
+ng new <name> --inline-template
+```
+#### --prefix
+
+#### --routing
+
+#### --skip-git
+
+#### --skip-install
+
+#### --tests
+
+#### --style
+
+#### --minimal
+
+#### --directory
+
+#### --defaults
+
+```bash
 --collection
 --commit
 --create-application
 --defaults
 --directory
---dry-run
 --experimental-ivy
 --force
 --help
---inline-style
---inline-template
 --interactive
 --minimal
 --new-project-root
