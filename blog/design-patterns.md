@@ -9,6 +9,8 @@ tags: [Design Patterns, patterns, Architecture]
 
 # Patrones de Diseño
 
+<Info />
+
 ## Que son?
 
 Los Patrones de diseño *(Design patterns en ingles)* son soluciones a problemas de diseño recurrentes que ocurren en la programación, al ser recurrentes estos problemas, un desarrollador podría encontrar diferentes maneras de abordar el problema llegando a diferentes soluciones, algunas mas optimas que otras.

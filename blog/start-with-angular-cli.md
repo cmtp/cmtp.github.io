@@ -9,6 +9,8 @@ tags: [Angular, Angular-CLI, CLI]
 
 # Iniciando con Angular CLI
 
+<Info />
+
 Bienvenidos, en este post veremos las ventajas de utilizar Angular CLI dentro de nuestro flujo de trabajo
 
 ![Angular CLI comandos](./images/iniciando-con-angular-cli/cli-logo.svg)

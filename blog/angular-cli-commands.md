@@ -9,6 +9,8 @@ tags: [Angular, Angular-CLI, CLI]
 
 # Comandos en Angular CLI
 
+<Info />
+
 En este post veremos mas a profundidad los comandos que el Angular CLI nos ofrece y su uso.
 
 ## Lista de Comandos
