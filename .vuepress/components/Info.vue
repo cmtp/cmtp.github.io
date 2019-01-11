@@ -1,11 +1,14 @@
 <template>
     <div>
-        <a :href="path">Christian Tola</a> <span>{{date}}</span>
-        <Badge :text="tag" v-for="tag,key in tags" :key="key"/>
-    </div>    
+        <div>
+            <a :href="path">Christian Tola</a>
+            <Badge :text="tag" v-for="tag,key in tags" :key="key"/>
+        </div>
+        <span>{{date}}</span>
+    </div>
 </template>
 <script>
-import moment from "moment";
+import moment,{ weekdays } from "moment";
 
 export default {
     computed: {
@@ -16,7 +19,8 @@ export default {
             return this.$page.frontmatter.tags;
         },
         date() {
-            return (this.$localePath.indexOf('en') === -1 ? 'Fecha: ' : 'Date: ') + this.$page.frontmatter.date;
+            let date = new Date(this.$page.frontmatter.date).toLocaleDateString(this.$lang, {month: 'long', year: 'numeric', day: 'numeric'});
+            return date
         }
     }
 }

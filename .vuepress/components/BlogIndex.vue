@@ -4,7 +4,7 @@
         <h2>
             <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
         </h2>
-        
+        <span>{{ date(post) }}</span>
         <p>{{ post.frontmatter.description }}</p>
 
         <p><router-link :to="post.path">{{ readMoreText }}</router-link></p>
@@ -33,6 +33,12 @@ export default {
                 return 'Read more'
             }
             return 'Leer más'
+        }
+    },
+    methods: {
+        date: function (post) {
+            let date = new Date(post.frontmatter.date).toLocaleDateString(this.$lang, {month: 'long', year: 'numeric', day: 'numeric'});
+            return date;
         }
     }
 }
