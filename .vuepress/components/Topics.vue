@@ -79,24 +79,24 @@
     </div>
     <div class="topic">
       <div class="topic-title">
-        <h3>Database</h3>
+        <h3>Base de Datos</h3>
       </div>
       <div class="bg-topic">
         <img :src="$withBase('/database.svg')" alt="Database">
       </div>
       <div class="topic-footer">
-        <span>Database</span>
+        <span>Base de Datos</span>
       </div>
     </div>
     <div class="topic">
       <div class="topic-title">
-        <h3>Programacion</h3>
+        <h3> Programación</h3>
       </div>
       <div class="bg-topic">
         <img :src="$withBase('/code.svg')" alt="Programacion">
       </div>
       <div class="topic-footer">
-        <span>Programacion</span>
+        <span> Programación</span>
       </div>
     </div>
   </div>
