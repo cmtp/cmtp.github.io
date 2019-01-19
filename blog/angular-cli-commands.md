@@ -5,6 +5,7 @@ author: Christian Tola
 description:
     Angular CLI cuenta con un gran set de comandos que nos permitirán optimizar nuestro trabajo Angular.
 tags: [Angular]
+type: angular
 ---
 
 # Comandos en Angular CLI

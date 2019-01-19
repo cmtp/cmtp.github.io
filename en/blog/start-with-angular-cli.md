@@ -5,6 +5,7 @@ author: Christian Tola
 description:
     Angular CLI is a great tool, it allows to generate a new project and optimizing our workflow with angular, a very necessary tool for web development.
 tags: [Angular, Angular-CLI, CLI]
+type: angular
 ---
 
 # Start with Angular CLI
