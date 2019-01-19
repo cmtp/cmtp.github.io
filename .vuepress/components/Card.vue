@@ -50,6 +50,13 @@ export default {
 };
 </script>
 <style scoped>
+@media screen and (max-width: 450px) {
+  .card {
+    grid-template-areas: "header" "logo" "resume" "footer" !important;
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+}
 .card {
   display: grid;
   grid-template-columns: 200px 1fr;
