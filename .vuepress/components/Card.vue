@@ -56,6 +56,9 @@ export default {
     grid-template-columns: 1fr !important;
     text-align: center;
   }
+  .card-resume {
+    margin-left: 0 !important;
+  }
 }
 .card {
   display: grid;
@@ -64,6 +67,7 @@ export default {
   /* box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
   margin-bottom: 15px;
+  padding: 0 15px 0 15px;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -76,6 +80,7 @@ export default {
 }
 .card-resume {
   grid-area: resume;
+  margin-left: 15px;
 }
 .card-footer {
   grid-area: footer;
