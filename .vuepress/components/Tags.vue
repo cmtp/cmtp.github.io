@@ -13,11 +13,13 @@ export default {
   },
   computed: {
     posts() {
-      if (this.$localePath.indexOf("en")) {
-          let content = this.relatedContent();
-        return content
+      if (this.$localePath.indexOf("en") > -1) {
+        return this.$site.pages
           .filter(
-            x => x.path.startsWith("/en/blog/") && !x.frontmatter.blog_index
+            x =>
+              x.path.startsWith("/en/blog/") &&
+              !x.frontmatter.blog_index &&
+              this.hasTagRelated(x)
           )
           .sort(
             (a, b) =>
@@ -25,25 +27,30 @@ export default {
           );
       }
       return this.$site.pages
-        .filter(x => x.path.startsWith("/blog/") && !x.frontmatter.blog_index)
+        .filter(
+          x =>
+            x.path.startsWith("/blog/") &&
+            !x.frontmatter.blog_index &&
+            this.hasTagRelated(x)
+        )
         .sort(
           (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
         );
     }
   },
   methods: {
-    relatedContent() {
-      if (this.$localePath.indexOf("en")) {
-        return this.$site.pages
-          .filter(x => {
-            x.frontmatter.tags.filter(i => i === this.tag);
-          });
+    hasTagRelated(x) {
+      let result = false;
+      let type = this.type;
+      if (x.frontmatter.tags !== undefined) {
+        x.frontmatter.tags.forEach(tag => {
+          if (!result) {
+            result = tag.toLowerCase() === type.toLowerCase();
+          }
+        });
       }
-      return this.$site.pages
-        .filter(x => x.path.startsWith("/blog/") && !x.frontmatter.blog_index)
-        .sort(
-          (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
-        );
+      console.log(result);
+      return result;
     }
   }
 };

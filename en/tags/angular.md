@@ -1,3 +1,7 @@
-# Angular
+---
+title: angular Posts
+---
 
-<Tag type="angular"/>
+# Angular Posts
+
+<Tags type="angular" />

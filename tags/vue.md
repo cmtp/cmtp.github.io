@@ -1,6 +1,6 @@
 ---
 title: vue
 ---
-# Angular
+# Vue Posts
 
-<!-- <Tags type="vue"/> -->
+<Tags type="vue" />

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <router-link to="/tags/vue/">
+    <router-link :to="this.$localePath + 'tags/vue.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>Vue</h3>
@@ -10,7 +10,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/tags/angular/">
+    <router-link :to="this.$localePath + 'tags/angular.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>Angular</h3>
@@ -20,7 +20,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/react.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>React</h3>
@@ -30,7 +30,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/node.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>NodeJs</h3>
@@ -40,7 +40,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/html-5.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>HTML</h3>
@@ -50,7 +50,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/css.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>CSS</h3>
@@ -60,7 +60,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/javascript.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>Javascript</h3>
@@ -70,20 +70,20 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/database.html'">
     <div class="topic">
       <div class="topic-title">
-        <h3>Base de Datos</h3>
+        <h3>{{this.$localePath.indexOf('en') > -1 ? 'Database' : 'Base de Datos'}}</h3>
       </div>
       <div class="bg-topic">
         <img :src="$withBase('/database.svg')" alt="Database">
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link :to="this.$localePath + 'tags/code.html'">
     <div class="topic">
       <div class="topic-title">
-        <h3> Programación</h3>
+        <h3> {{this.$localePath.indexOf('en') > -1 ? 'Code': 'Programación'}}</h3>
       </div>
       <div class="bg-topic">
         <img :src="$withBase('/code.svg')" alt="Programacion">

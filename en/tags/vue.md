@@ -3,4 +3,4 @@ title: vue
 ---
 # Vue
 
-<!-- <Tags type="vue"/> -->
+<Tags type="vue"/>
