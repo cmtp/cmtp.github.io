@@ -4,7 +4,7 @@ date: 2019-01-17
 author: Christian Tola
 description:
     Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario.
-tags: [Vue]
+tags: [vue]
 type: vue
 ---
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <router-link to="/">
+    <router-link to="/tags/vue/">
     <div class="topic">
       <div class="topic-title">
         <h3>Vue</h3>
@@ -10,7 +10,7 @@
       </div>
     </div>
     </router-link>
-    <router-link to="/">
+    <router-link to="/tags/angular/">
     <div class="topic">
       <div class="topic-title">
         <h3>Angular</h3>

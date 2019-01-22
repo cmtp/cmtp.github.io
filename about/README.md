@@ -23,3 +23,7 @@ He trabajado en proyectos con PHP(drupal, simphony), Java(Java EE, Spring Boot),
 
 Escribo este blog a manera de apunte, para agregar todo lo que voy aprendiendo, y también para compartir el conocimiento con todo aquel al que le sea util.
 Javascript es el lenguaje que mas me gusta asi que si continua leyendo mi Blog, usted puede que vea mucho de el lenguaje que tanto me gusta, aunque no me encuentro cerrado sobre ese aspecto, también suelo escribir sobre otras tecnologías sobre las que me encuentro actualmente aprendiendo.
+
+## Deseas Contactarme?
+
+Puedes encontrarme por twitter como [@ctola91](https://twitter.com/ctola91).
