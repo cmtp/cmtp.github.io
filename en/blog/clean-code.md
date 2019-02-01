@@ -3,21 +3,21 @@ title: Código Limpio
 date: 2018-11-26
 author: Christian Tola
 description:
-    Que es el código limpio? por que deberíamos escribir código limpio?
-    Aprenderemos mas sobre las bases del código limpio.
+    What is clean code? Why should we write clean clode?
+    We are going to learn about the basis of Clean Code.
 tags: [code, patterns]
 type: code
 ---
 
-# Código Limpio parte 1
+# Clean Code part 1
 
 <Info />
 
-*Este es el primer articulo de la serie de código limpio donde iremos agregando consejos de como mejorar nuestro código.*
+*This is the first post of Clean Code Series, we are going to add tips on how to get better our code.*
 
-¿Que es el código limpio? ¿Por que deberíamos escribir código limpio?, primero revisemos las bases sobre que es código limpio.
+What is *"clean code"*? Why should we write clean code?, first we'll review the basis about Write Clean Code.
 
-## Que es el código limpio?
+## What is Clean Code?
 
 Existen varias definiciones, y a mi parecer todas son correctas, una de las mas completas que he visto es la de **Bjarne Stroustrup** inventor de *C++* y autor de **The C++ Programming Language**:
 

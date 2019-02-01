@@ -12,3 +12,5 @@ type: node
 
 Nodejs es un entorno de programación que permite crear aplicaciones en el lado del servidor utilizando Javascript como lenguaje principal, esto ha generado mucha popularidad entre los desarrolladores ya que permite desarrollar una aplicación en todos sus niveles (Base de datos, Backend, Frontend) con Javascript.
 
+Nest.js es un framework para el desarrollo backend que permite crear aplicaciones del lado del servidor utilizando Typescript.
+
