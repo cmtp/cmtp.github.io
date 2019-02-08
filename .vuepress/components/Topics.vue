@@ -36,7 +36,7 @@
         <h3>NodeJs</h3>
       </div>
       <div class="bg-topic">
-        <img :src="$withBase('/nodejs.svg')" alt="Nodejs">
+        <img :src="$withBase('/node.svg')" alt="Nodejs">
       </div>
     </div>
     </router-link>
