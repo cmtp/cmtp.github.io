@@ -1,30 +1,45 @@
 <template>
+  <div class="container">
     <div>
-        <div>
-            <a :href="path">Christian Tola</a>
-            <Badge :text="tag" v-for="tag,key in tags" :key="key"/>
-        </div>
-        <span>{{date}}</span>
+      <div>
+        <a :href="path">Christian Tola</a>
+        <Badge :text="tag" v-for="tag,key in tags" :key="key"/>
+      </div>
+      <span>{{date}}</span>
     </div>
+    <div>
+      <SocialButtons/>
+    </div>
+  </div>
 </template>
 <script>
-import moment,{ weekdays } from "moment";
+import moment, { weekdays } from "moment";
 
 export default {
-    computed: {
-        path() {
-            return this.$localePath + 'about/';
-        },
-        tags() {
-            return this.$page.frontmatter.tags;
-        },
-        date() {
-            let date = new Date(this.$page.frontmatter.date).toLocaleDateString(this.$lang, {month: 'long', year: 'numeric', day: 'numeric'});
-            return date
-        }
+  computed: {
+    path() {
+      return this.$localePath + "about/";
+    },
+    tags() {
+      return this.$page.frontmatter.tags;
+    },
+    date() {
+      let date = new Date(this.$page.frontmatter.date).toLocaleDateString(
+        this.$lang,
+        { month: "long", year: "numeric", day: "numeric" }
+      );
+      return date;
     }
-}
+  }
+};
 </script>
 <style scoped>
-
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.container > div {
+  margin-right: 10px;
+}
 </style>

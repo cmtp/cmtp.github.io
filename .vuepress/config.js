@@ -1,5 +1,8 @@
 module.exports = {
     // base: 'cmtp.github.io',
+    head: [
+        ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}]
+    ],
     serviceWorker: true,
     themeConfig: {
         locales: {
@@ -30,28 +33,28 @@ module.exports = {
                 //     '/nested/': [/* ... */]
                 //   }
             },
-            '/en/': {
-                title: 'My Syte',
-                selectText: 'Languages',
-                label: 'English',
-                //   editLinkText: '在 GitHub 上编辑此页',
-                serviceWorker: {
-                    updatePopup: {
-                        message: "New content is available.",
-                        buttonText: "Refresh"
-                    }
-                },
-                nav: [
-                    { text: 'Home', link: '/en/' },
-                    { text: 'Blog', link: '/en/blog/' },
-                    { text: 'About', link: '/en/about/' }
-                ],
-                algolia: {},
-                //   sidebar: {
-                //     '/zh/': [/* ... */],
-                //     '/zh/nested/': [/* ... */]
-                //   }
-            }
+            // '/en/': {
+            //     title: 'My Syte',
+            //     selectText: 'Languages',
+            //     label: 'English',
+            //     //   editLinkText: '在 GitHub 上编辑此页',
+            //     serviceWorker: {
+            //         updatePopup: {
+            //             message: "New content is available.",
+            //             buttonText: "Refresh"
+            //         }
+            //     },
+            //     nav: [
+            //         { text: 'Home', link: '/en/' },
+            //         { text: 'Blog', link: '/en/blog/' },
+            //         { text: 'About', link: '/en/about/' }
+            //     ],
+            //     algolia: {},
+            //     //   sidebar: {
+            //     //     '/zh/': [/* ... */],
+            //     //     '/zh/nested/': [/* ... */]
+            //     //   }
+            // }
         }
     },
     configureWebpack: {
@@ -71,10 +74,10 @@ module.exports = {
             title: `christiantola.dev`,
             description: `Blog de Christian hecho en Vue`
         },
-        '/en/': {
-            lang: 'en-US',
-            title: 'christiantola.dev',
-            description: `Vue-powered Christian's Blog`
-        }
+        // '/en/': {
+        //     lang: 'en-US',
+        //     title: 'christiantola.dev',
+        //     description: `Vue-powered Christian's Blog`
+        // }
     }
 }
