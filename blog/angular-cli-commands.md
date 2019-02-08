@@ -156,6 +156,7 @@ Eso es todo sobre el comando ng new, en siguientes post veremos los comandos que
 
 Saludos!
 
+**Compartelo en tus redes Sociales!**
 <SocialButtons />
 
 <Disqus />

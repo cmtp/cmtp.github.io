@@ -203,4 +203,7 @@ Aca termina esta introducción al Framework Vue, en próximos posts revisaremos 
 
 Saludos.
 
+**Compartelo en tus redes Sociales!**
+<SocialButtons />
+
 <Disqus />

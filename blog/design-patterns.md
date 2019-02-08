@@ -146,4 +146,7 @@ En siguientes artículos estudiaremos los patrones de diseño y como utilizarlos
 
 Saludos.
 
+**Compartelo en tus redes Sociales!**
+<SocialButtons />
+
 <Disqus />
