@@ -71,7 +71,7 @@ module.exports = {
         // As a special case, the default locale can use '/' as its path.
         '/': {
             lang: 'es-ES', // this will be set as the lang attribute on <html>
-            title: `christiantola.dev`,
+            title: `christiantola.me`,
             description: `Blog de Christian hecho en Vue`
         },
         // '/en/': {
