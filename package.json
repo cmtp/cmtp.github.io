@@ -4,9 +4,10 @@
     "description": "this is a blog with vuepress",
     "main": "index.js",
     "scripts": {
+        "copy": "cp CNAME .vuepress/dist/CNAME",
         "test": "test",
         "dev": "vuepress dev",
-        "build": "vuepress build",
+        "build": "vuepress build && npm run copy",
         "local-server": "lite-server --baseDir=.vuepress/dist",
         "publish": "push-dir --dir=.vuepress/dist --branch=master --cleanup"
     },
