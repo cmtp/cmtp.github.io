@@ -89,7 +89,7 @@ Si gustan buscar mas información sobre como escribir código limpio les recomie
 
 Adiós!
 
-**Compartelo en tus redes Sociales!**
+**Compártelo en tus redes Sociales!**
 <SocialButtons />
 
 <Disqus />

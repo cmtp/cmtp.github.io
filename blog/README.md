@@ -5,6 +5,6 @@ layout: BlogLayout
 
 # Blog
 
-Bienvenidos al blog de Christian
+Angular, Vue, React, Javascript y mas.
 
 <BlogIndex language="es" />

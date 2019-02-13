@@ -34,6 +34,11 @@ La mejor forma de iniciar un proyecto con Nest.js es instalando su interfaz de l
 npm install -g @nestjs/cli
 ```
 
+para verificar que la instalacion fue satisfactoria ejecutamos el comando:
+
+```bash
+nest --version
+```
 
 
 **Compártelo en tus redes Sociales!**
