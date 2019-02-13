@@ -1,7 +1,7 @@
 ---
 title: Crear un api rest con Nest.js
 layout: PostLayout
-date: 2018-01-24
+date: 2019-01-24
 author: Christian Tola
 description:
     Este es el primero de los articulos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
@@ -34,11 +34,24 @@ La mejor forma de iniciar un proyecto con Nest.js es instalando su interfaz de l
 npm install -g @nestjs/cli
 ```
 
-para verificar que la instalacion fue satisfactoria ejecutamos el comando:
+para verificar que la instalación fue satisfactoria ejecutamos el comando:
 
 ```bash
 nest --version
 ```
+
+eso nos mostrara la version del nest cli que tenemos instalada.
+
+para comenzar un nuevo proyecto ejecutamos el siguiente comando:
+
+```bash
+nest new my-rest
+```
+
+Nest nos solicitara una descripción, la version del proyecto y el autor del mismo, luego creara un nuevo proyecto llamado *my-rest* con toda la estructura inicial que necesitamos para comenzar.
+
+![nest result](./images/create-api-rest-nestjs/nest-cli-result.png)
+
 
 
 **Compártelo en tus redes Sociales!**
