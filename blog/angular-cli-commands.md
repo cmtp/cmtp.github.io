@@ -1,4 +1,5 @@
 ---
+layout: PostLayout
 title: Comandos en Angular CLI
 date: 2018-12-13
 author: Christian Tola

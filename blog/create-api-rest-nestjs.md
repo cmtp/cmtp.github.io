@@ -1,5 +1,6 @@
 ---
 title: Crear un api rest con Nest.js
+layout: PostLayout
 date: 2018-01-24
 author: Christian Tola
 description:
