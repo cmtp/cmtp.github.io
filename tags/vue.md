@@ -1,5 +1,6 @@
 ---
 title: vue
+layout: BlogLayout
 ---
 # Vue Posts
 

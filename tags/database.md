@@ -1,5 +1,6 @@
 ---
 title: Base de datos
+layout: BlogLayout
 ---
 # Base de datos
 
