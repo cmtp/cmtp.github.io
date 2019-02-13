@@ -1,5 +1,6 @@
 ---
 title: HTML5
+layout: BlogLayout
 ---
 # HTML Posts
 

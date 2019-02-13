@@ -1,5 +1,6 @@
 ---
 title: Tags
+layout: BlogLayout
 ---
 
 # Tags

@@ -1,5 +1,6 @@
 ---
 title: Iniciando con Angular CLI
+layout: PostLayout
 date: 2018-11-20
 author: Christian Tola
 description:

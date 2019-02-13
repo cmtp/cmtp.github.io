@@ -1,5 +1,6 @@
 ---
 title: angular Posts
+layout: BlogLayout
 ---
 
 # Angular Posts

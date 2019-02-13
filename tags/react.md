@@ -1,5 +1,6 @@
 ---
 title: react
+layout: BlogLayout
 ---
 # React Posts
 

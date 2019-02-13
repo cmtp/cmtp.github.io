@@ -1,5 +1,6 @@
 ---
 title: Código Limpio
+layout: PostLayout
 date: 2018-11-26
 author: Christian Tola
 description:

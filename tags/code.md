@@ -1,5 +1,6 @@
 ---
 title: Code
+layout: BlogLayout
 ---
 # Code Posts
 

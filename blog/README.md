@@ -1,5 +1,6 @@
 ---
 blog_index: true
+layout: BlogLayout
 ---
 
 # Blog

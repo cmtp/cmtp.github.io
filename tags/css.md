@@ -1,5 +1,6 @@
 ---
 title: CSS3
+layout: BlogLayout
 ---
 # CSS Posts
 

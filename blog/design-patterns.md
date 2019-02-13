@@ -1,5 +1,6 @@
 ---
 title: Patrones de diseño
+layout: PostLayout
 date: 2018-12-04
 author: Christian Tola
 description:

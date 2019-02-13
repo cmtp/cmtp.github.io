@@ -3,12 +3,10 @@
         <div class="banner">
             <img :src="$withBase('/banner.jpeg')" alt="banner" class="img-responsive" />
         </div>
-        <div>
-          
-        </div>
         <div class="page">
             <Content />
         </div>
+        <Footer />
     </div>
 </template>
 <script>
