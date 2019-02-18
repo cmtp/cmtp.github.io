@@ -40,7 +40,7 @@
       </div>
     </div>
     </router-link>
-    <router-link :to="this.$localePath + 'tags/html-5.html'">
+    <!-- <router-link :to="this.$localePath + 'tags/html-5.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>HTML</h3>
@@ -49,8 +49,8 @@
         <img :src="$withBase('/html-5.svg')" alt="HTML5">
       </div>
     </div>
-    </router-link>
-    <router-link :to="this.$localePath + 'tags/css.html'">
+    </router-link> -->
+    <!-- <router-link :to="this.$localePath + 'tags/css.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>CSS</h3>
@@ -59,7 +59,7 @@
         <img :src="$withBase('/css-3.svg')" alt="CSS3">
       </div>
     </div>
-    </router-link>
+    </router-link> -->
     <router-link :to="this.$localePath + 'tags/javascript.html'">
     <div class="topic">
       <div class="topic-title">
@@ -70,7 +70,7 @@
       </div>
     </div>
     </router-link>
-    <router-link :to="this.$localePath + 'tags/database.html'">
+    <!-- <router-link :to="this.$localePath + 'tags/database.html'">
     <div class="topic">
       <div class="topic-title">
         <h3>{{this.$localePath.indexOf('en') > -1 ? 'Database' : 'Base de Datos'}}</h3>
@@ -79,7 +79,7 @@
         <img :src="$withBase('/database.svg')" alt="Database">
       </div>
     </div>
-    </router-link>
+    </router-link> -->
     <router-link :to="this.$localePath + 'tags/code.html'">
     <div class="topic">
       <div class="topic-title">
