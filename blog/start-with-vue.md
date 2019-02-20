@@ -1,7 +1,7 @@
 ---
 title: Desarrollo Progresivo con Vue.js
 layout: PostLayout
-date: 2019-01-17
+date: 2019-01-06
 author: Christian Tola
 description:
     Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario.

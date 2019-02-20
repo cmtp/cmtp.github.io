@@ -1,7 +1,7 @@
 ---
 title: Crear un api rest con Nest.js
 layout: PostLayout
-date: 2019-01-24
+date: 2019-02-17
 author: Christian Tola
 description:
     Este es el primero de los articulos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.

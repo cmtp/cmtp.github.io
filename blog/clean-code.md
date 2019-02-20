@@ -1,7 +1,7 @@
 ---
 title: Código Limpio
 layout: PostLayout
-date: 2018-11-26
+date: 2019-01-03
 author: Christian Tola
 description:
     Que es el código limpio? por que deberíamos escribir código limpio?
