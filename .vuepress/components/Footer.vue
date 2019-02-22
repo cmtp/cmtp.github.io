@@ -26,7 +26,8 @@ footer {
   flex-direction: column;
 }
 .footer-content {
-  width: 100%;
+  padding: 0px 15px;
+  text-align: justify;
 }
 .footer-links {
   width: 100%;
