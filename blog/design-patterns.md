@@ -7,6 +7,35 @@ description:
     En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software" que se ha convertido los patrones de diseño en una de las partes fundamentales dentro del desarrollo.
 tags: [code, patterns, javascript]
 type: javascript
+meta:
+#  facebook metadata
+  # - property: fb:app_id
+  #   content: 
+  - property: og:url
+    content: https://christiantola.me/blog/design-patterns.html
+  - property: og:type
+    content: article
+  - property: og:title
+    content: Patrones de diseño
+  - property: og:description
+    content: En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software"...
+  - property: og:image
+    content: https://christiantola.me/javascript.svg
+  - property: og:site_name
+    content: christiantola.me
+  - property: article:author
+    content: https://www.facebook.com/ctola01/
+# twitter
+  - name: twitter:card
+    content: summary
+  - name: twitter:site
+    content: '@ctola91'
+  - name: twitter:title
+    content: Patrones de diseño
+  - name: twitter:description
+    content: En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software"...
+  - name: twitter:image
+    content: https://christiantola.me/javascript.svg
 ---
 
 # Patrones de Diseño

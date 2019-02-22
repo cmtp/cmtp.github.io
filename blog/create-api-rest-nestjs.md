@@ -4,9 +4,38 @@ layout: PostLayout
 date: 2019-02-17
 author: Christian Tola
 description:
-    Este es el primero de los articulos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
+    Este es el primero de los artículos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
 tags: [Node]
 type: node
+meta:
+#  facebook metadata
+  # - property: fb:app_id
+  #   content: 
+  - property: og:url
+    content: https://christiantola.me/blog/create-api-rest-nestjs.html
+  - property: og:type
+    content: article
+  - property: og:title
+    content: Crear un api rest con Nest.js
+  - property: og:description
+    content: Este es el primero de los artículos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
+  - property: og:image
+    content: https://christiantola.me/node.svg
+  - property: og:site_name
+    content: christiantola.me
+  - property: article:author
+    content: https://www.facebook.com/ctola01/
+# twitter
+  - name: twitter:card
+    content: summary
+  - name: twitter:site
+    content: '@ctola91'
+  - name: twitter:title
+    content: Crear un api rest con Nest.js
+  - name: twitter:description
+    content: Este es el primero de los artículos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
+  - name: twitter:image
+    content: https://christiantola.me/node.svg
 ---
 
 # Crear un Api Rest con Nest.js

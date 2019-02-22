@@ -7,6 +7,35 @@ description:
     Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario.
 tags: [vue]
 type: vue
+meta:
+#  facebook metadata
+  # - property: fb:app_id
+  #   content: 
+  - property: og:url
+    content: https://christiantola.me/blog/start-with-vue.html
+  - property: og:type
+    content: article
+  - property: og:title
+    content: Desarrollo Progresivo con Vue.js
+  - property: og:description
+    content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
+  - property: og:image
+    content: https://christiantola.me/vue.svg
+  - property: og:site_name
+    content: christiantola.me
+  - property: article:author
+    content: https://www.facebook.com/ctola01/
+# twitter
+  - name: twitter:card
+    content: summary
+  - name: twitter:site
+    content: '@ctola91'
+  - name: twitter:title
+    content: Desarrollo Progresivo con Vue.js
+  - name: twitter:description
+    content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
+  - name: twitter:image
+    content: https://christiantola.me/vue.svg
 ---
 
 # Desarrollo Progresivo con Vue.js

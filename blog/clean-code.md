@@ -8,6 +8,35 @@ description:
     Aprenderemos mas sobre las bases del código limpio.
 tags: [code, patterns]
 type: code
+meta:
+#  facebook metadata
+  # - property: fb:app_id
+  #   content: 
+  - property: og:url
+    content: https://christiantola.me/blog/clean-code.html
+  - property: og:type
+    content: article
+  - property: og:title
+    content: Código Limpio
+  - property: og:description
+    content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
+  - property: og:image
+    content: https://christiantola.me/code.svg
+  - property: og:site_name
+    content: christiantola.me
+  - property: article:author
+    content: https://www.facebook.com/ctola01/
+# twitter
+  - name: twitter:card
+    content: summary
+  - name: twitter:site
+    content: '@ctola91'
+  - name: twitter:title
+    content: Código Limpio
+  - name: twitter:description
+    content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
+  - name: twitter:image
+    content: https://christiantola.me/code.svg
 ---
 
 # Código Limpio parte 1
