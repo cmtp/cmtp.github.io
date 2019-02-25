@@ -20,7 +20,7 @@ meta:
   - property: og:description
     content: Angular CLI es una herramienta muy funcional, permite generar un nuevo proyecto y optimizar nuestro flujo de trabajo con angular...
   - property: og:image
-    content: https://christiantola.me/angular.svg
+    content: https://christiantola.me/images/posts/start-with-angular-cli.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -35,11 +35,13 @@ meta:
   - name: twitter:description
     content: Angular CLI es una herramienta muy funcional, permite generar un nuevo proyecto y optimizar nuestro flujo de trabajo con angular...
   - name: twitter:image
-    content: https://christiantola.me/angular.svg
+    content: https://christiantola.me/images/posts/start-with-angular-cli.jpg
 ---
 ---
 
 # Iniciando con Angular CLI
+
+<Banner url="start-with-angular-cli.jpg" alt="start with angular cli"/>
 
 <Info />
 

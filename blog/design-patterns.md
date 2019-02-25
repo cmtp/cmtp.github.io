@@ -20,7 +20,7 @@ meta:
   - property: og:description
     content: En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software"...
   - property: og:image
-    content: https://christiantola.me/javascript.svg
+    content: https://christiantola.me/images/posts/design-patterns.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -35,10 +35,12 @@ meta:
   - name: twitter:description
     content: En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software"...
   - name: twitter:image
-    content: https://christiantola.me/javascript.svg
+    content: https://christiantola.me/images/posts/design-patterns.jpg
 ---
 
 # Patrones de Diseño
+
+<Banner url="design-patterns.jpg" alt="Design patterns"/>
 
 <Info />
 

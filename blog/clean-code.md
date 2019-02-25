@@ -21,7 +21,7 @@ meta:
   - property: og:description
     content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
   - property: og:image
-    content: https://christiantola.me/code.svg
+    content: https://christiantola.me/images/posts/clean-code.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -36,10 +36,12 @@ meta:
   - name: twitter:description
     content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
   - name: twitter:image
-    content: https://christiantola.me/code.svg
+    content: https://christiantola.me/images/posts/clean-code.jpg
 ---
 
 # Código Limpio parte 1
+
+<Banner url="clean-code.jpg" alt="Clean code"/>
 
 <Info />
 

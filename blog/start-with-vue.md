@@ -20,7 +20,7 @@ meta:
   - property: og:description
     content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
   - property: og:image
-    content: https://christiantola.me/vue.svg
+    content: https://christiantola.me/images/posts/start-with-vue.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -35,10 +35,12 @@ meta:
   - name: twitter:description
     content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
   - name: twitter:image
-    content: https://christiantola.me/vue.svg
+    content: https://christiantola.me/images/posts/start-with-vue.jpg
 ---
 
 # Desarrollo Progresivo con Vue.js
+
+<Banner url="start-with-vue.jpg" alt="start with vue"/>
 
 <Info />
 
