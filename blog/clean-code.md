@@ -114,6 +114,19 @@ Cuando nombramos funciones el método debe revelar su implementación, no deber�
 
 Evite usar codificaciones en los nombres, de por si un desarrollador revisara código de otras personas, agregar una codificación adicional solo retrasara al desarrollador, un ejemplo, una empresa "X" utiliza A01254 para identificar a un tipo de clases que están relacionadas con una sección de reportes de las actividades de los usuarios y A01253 para la información almacenada de los usuarios, todas las clases relacionadas a este sistema se nombran de la siguiente manera *A01254-controller o A01253-controller*, para entender a que modulo pertenece cada clase la empresa brinda un diccionario de los códigos, En lugar de ello es mucho mas fácil de entender y mas rápido de encontrar, cuando se utiliza *ReportUserController ReportUserInformationController.*
 
+## Funciones
+
+### Funciones cortas
+
+Al momento de escribir las funciones debemos evitar escribir funciones que tengan muchas lineas de código, al ser muy extensas las funciones dificultan la lectura de la aplicación, al mismo tiempo que es posible que agreguen lógica innecesaria dentro de las funciones.
+
+La longitud ideal de una función seria menor a 20 lineas, si necesitamos mas lineas dentro de la función es posible que necesitemos hacer una refactorización.
+
+
+### Nombres con Sentido
+
+El nombre de las funciones debe dar una pista de la implementación de la función.
+
 Aquí terminamos esta primera parte de código limpio, en artículos posteriores veremos algunos ejemplos mas de como mejorar nuestro código.
 
 Si gustan buscar mas información sobre como escribir código limpio les recomiendo el libro *"Clean Code: A handbook of Agile Software Craftsmanship"* the Robert C. Martin
