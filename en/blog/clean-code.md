@@ -19,26 +19,26 @@ What is *"clean code"*? Why should we write clean code?, first we'll review the 
 
 ## What is Clean Code?
 
-Existen varias definiciones, y a mi parecer todas son correctas, una de las mas completas que he visto es la de **Bjarne Stroustrup** inventor de *C++* y autor de **The C++ Programming Language**:
+There are many definitions, and all are right, one of the most complete that I've seen is of *C++*'s inventors, **Bjarne Stroustrup**, the author of **The C++ Programming Language** says:
 
-> *"Me gusta que mi código sea elegante y eficaz. La lógica deb ser directa para evitar errores ocultos, las dependencias deben ser mínimas para facilitar el mantenimiento, el procesamiento de errores completo y sujeto a una estrategia articulada, y el rendimiento debe ser optimo para que los usuarios no tiendan a estropear el código con optimizaciones sin sentido. El código limpio hace bien una cosa."*
+> *"I like my code to be elegant and efficient. The logic should be straightforward and make it hard for bugs to hide, the dependencies minimal to ease maintenance, error handling complete according to an articulated strategy, and performance close to optimal so as not to tempt people to make the code messy with unprincipled optimizations. Clean code does one thing well."*
 
-El código limpio es simple, y elegante, debe ser sencillo de leer, fácil de extender.
- 
-Veamos como escribir código limpio.
+Clean code is simple, elegant, easy to read and easy to understand.
 
-## Nombres con Sentido
+Let's see how to write clean code.
 
-Se deben usar nombres que revelen las intenciones, estos nombres si bien son validos, no brindan información util al desarrollador.
+## Meaningful Names
+
+Names that show the intentions should be used, these names although they are valid, do not provide useful information to developers.
 
 ```ts
-// Mal Código
-let d; // Este tipo de nombres no ofrecen ningún tipo de información sobre su uso.
+// Bad Code
+let d; // These type of names doesn't offer a valid information.
 let ac;
 let d12;
-let theList; // Este nombre es muy genérico, también colocar el tipo (List) en el nombre puede llevar a confusiones.
+let theList; // This name is too generic, the type (List) in the name can lead to confusion.
 const M;
-// Código Limpio
+// Clean Code
 let remainingDate;
 let userAccountInformation;
 let userAccounts;
