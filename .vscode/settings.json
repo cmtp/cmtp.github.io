@@ -1,5 +1,4 @@
 {
-    "cSpell.language": ",es",
     "cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
@@ -30,5 +29,6 @@
     ],
     "cSpell.words": [
         "optimizaciones"
-    ]
+    ],
+    "cSpell.language": "en"
 }

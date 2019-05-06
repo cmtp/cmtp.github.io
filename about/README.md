@@ -12,7 +12,7 @@ Me gusta escribir código, Javascript es mi lenguaje favorito, y cada dia aprend
 
 Otra de mis pasiones es la enseñanza, trabaje durante un tiempo como profesor de programación, y suelo dar charlas relacionadas a las tecnologías que me apasionan dentro de diferentes comunidades.
 
-He trabajado en proyectos con PHP(drupal, simphony), Java(Java EE, Spring Boot), c# y principalmente Javascript, tanto en Backend gracias a Node.js, como en Frontend, utilizando Angular, Vue, React asi como ECMAScript 6(ES6) y Typescript.
+He trabajado en proyectos con PHP(drupal, Symphony), Java(Java EE, Spring Boot), c# y principalmente Javascript, tanto en Backend gracias a Node.js, como en Frontend, utilizando Angular, Vue, React asi como ECMAScript 6(ES6) y Typescript.
 
 ## Que hago actualmente?
 - Me encuentro leyendo *Las mil y una noches* en mi tiempo libre.
