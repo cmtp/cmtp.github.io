@@ -44,13 +44,11 @@ let userAccountInformation;
 let userAccounts;
 const HTTP_METHODS;
 ```
-
-Evitar nombres con variaciones mínimas, estos nombres agregan ruido al momento de realizar una búsqueda de alguna clase especifica, método, o variable.
+avoid names with little changes, this names add noise when we apply a search in a specific class, method or variable.
 
 ```ts
 /** 
- * Ambos nombres son parecidos pero no iguales, esto puede generar confusión 
- * para el desarrollador 
+ * Both names are similar, but they aren't the same, this would be confuse for the developer.
 **/
 export default class XYZControllerForEfficientHandlingOfStrings {
     ...
@@ -60,7 +58,7 @@ export default class XYZControllerForEfficientStorageOfStrings {
 }
 ```
 
-Usar nombres que se puedan buscar y que sean fáciles de pronunciar. 
+You should use names that would be searchable, and would be easy to say.
 
 ```ts
 // variables
@@ -78,14 +76,12 @@ addNewCustomer() {
     ...
 }
 ```
-Cuando nombramos funciones el método debe revelar su implementación, no debería ser necesario revisar todo el método si el nombre esta bien escrito
+When functions are called, theirs name should reveal theirs implementation, there isn't necessary to review the code inside functions if the name is right.
 
-Evite usar codificaciones en los nombres, de por si un desarrollador revisara código de otras personas, agregar una codificación adicional solo retrasara al desarrollador, un ejemplo, una empresa "X" utiliza A01254 para identificar a un tipo de clases que están relacionadas con una sección de reportes de las actividades de los usuarios y A01253 para la información almacenada de los usuarios, todas las clases relacionadas a este sistema se nombran de la siguiente manera *A01254-controller o A01253-controller*, para entender a que modulo pertenece cada clase la empresa brinda un diccionario de los códigos, En lugar de ello es mucho mas fácil de entender y mas rapido de encontrar, cuando se utiliza *ReportUserController ReportUserInformationController.*
+Avoid use codes in names, developers need to review a lot of code written from other developers, add additional code in names only delay the work of developers, for example, a company Called "X" use de code A01254 to identify a class type that is related to the report's section of users and A01253 to save information from the report of user's profile, the company calls these classes *A01254-controller* and *A01253-controller* and to understand this code the company provides a dictionary to find the value of this codes, I think that would be better for understand call this classes as a *ReportUserController* and *ReportUserProfileController*.
 
-Aquí terminamos esta primera parte de código limpio, en artículos posteriores veremos algunos ejemplos mas de como mejorar nuestro código.
+In next articles we are going to see more samples about clean code, a book that I recommended is *"Clean Code: A handbook of Agile Software Craftsmanship"* of Robert C. Martin.
 
-Si gustan buscar mas información sobre como escribir código limpio les recomiendo el libro *"Clean Code: A handbook of Agile Software Craftsmanship"* the Robert C. Martin
-
-Adiós!
+Goodbye!
 
 <Disqus />
