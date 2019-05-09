@@ -8,7 +8,7 @@
     <div class="card-img">
       <!-- img -->
       <router-link :to="post.path">
-        <img :src="$withBase('/' + post.frontmatter.type + '.svg')" :alt="post.frontmatter.type">
+        <img :src="$withBase('/images/banners/BannerTemplate' + post.frontmatter.type + '.jpg')" :alt="post.frontmatter.type">
       </router-link>
     </div>
     <div class="card-resume">
@@ -62,7 +62,7 @@ export default {
 }
 .card {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "header header" "logo resume" "footer footer";
   /* box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
@@ -71,9 +71,6 @@ export default {
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-.card img {
-  max-width: 100px;
 }
 .card-title {
   grid-area: header;

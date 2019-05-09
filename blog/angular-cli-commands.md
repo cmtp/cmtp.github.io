@@ -20,7 +20,7 @@ meta:
   - property: og:description
     content: Angular CLI cuenta con un gran set de comandos que nos permitirán optimizar nuestro trabajo Angular.
   - property: og:image
-    content: https://christiantola.me/images/posts/angular-cli-commands.jpg
+    content: https://christiantola.me/images/banners/BannerTemplateAngular.jpg
   - property: og:site_name
     content: christiantola.me
   - property: article:author
@@ -35,7 +35,7 @@ meta:
   - name: twitter:description
     content: Angular CLI cuenta con un gran set de comandos que nos permitirán optimizar nuestro trabajo Angular.
   - name: twitter:image
-    content: https://christiantola.me/images/posts/angular-cli-commands.jpg
+    content: https://christiantola.me/images/banners/BannerTemplateAngular.jpg
 ---
 
 # Comandos en Angular CLI
