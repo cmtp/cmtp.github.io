@@ -1,10 +1,10 @@
 ---
-title: Desarrollo Progresivo con Vue.js
+title: Progressive Development with Vue.js
 layout: PostLayout
-date: 2019-01-06
+date: 2019-05-09
 author: Christian Tola
 description:
-    Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario.
+    Vue.js is a Javascript Framework for Single Page Applications that allows to create user interfaces.
 tags: [vue]
 type: vue
 meta:
@@ -12,13 +12,13 @@ meta:
   # - property: fb:app_id
   #   content: 
   - property: og:url
-    content: https://christiantola.me/blog/start-with-vue.html
+    content: https://christiantola.me/en/blog/start-with-vue.html
   - property: og:type
     content: article
   - property: og:title
-    content: Desarrollo Progresivo con Vue.js
+    content: Progressive Development with Vue.js
   - property: og:description
-    content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
+    content: Vue.js is a Javascript Framework for Single Page Applications....
   - property: og:image
     content: https://christiantola.me/images/banners/BannerTemplateVue.jpg
   - property: og:site_name
@@ -38,17 +38,17 @@ meta:
     content: https://christiantola.me/images/banners/BannerTemplateVue.jpg
 ---
 
-# Desarrollo Progresivo con Vue.js
+# Progressive Development with Vue.js
 
-<Banner url="start-with-vue.jpg" alt="start with vue"/>
+<Banner alt="start with vue"/>
 
 <Info />
 
-Vue.js es un Framework Javascript para el desarrollo de interfaces de usuario, su principal característica es la flexibilidad que ofrece al momento de desarrollar tanto aplicaciones pequeñas hasta aplicaciones empresariales de gran tamaño.
+Vue.js is a Javascript Framework for User Interface Development, it allows to create from small apps to more structured and complex big applications.
 
-## Instalación
+## Installation
 
-Es posible iniciar Vue.js simplemente utilizando un cdn para comenzar a utilizar el Framework, o si en el proyecto actualmente se usa ES6 (ECMAScript6 ) es posible importar el cdn como un modulo.
+You can use Vue.js from a CDN to add vue inside any page or application, if yoy use ES6(ECMAScript 6), you can import vuejs as a module.
 
 ```html
 <html>
@@ -72,7 +72,7 @@ Es posible iniciar Vue.js simplemente utilizando un cdn para comenzar a utilizar
 import Vue from 'import Vue from https://cdn.jsdelivr.net/npm/vue';
 ```
 
-## Iniciando con Vue
+## Getting Started
 
 Para comenzar a utilizar Vue debemos crear en nuestro html un div el cual se conectara con nuestra aplicación Vue.
 

@@ -6,6 +6,35 @@ description:
     Angular CLI is a great tool, it allows to generate a new project and optimizing our workflow with angular, a very necessary tool for web development.
 tags: [Angular, Angular-CLI, CLI]
 type: angular
+meta:
+#  facebook metadata
+  # - property: fb:app_id
+  #   content: 
+  - property: og:url
+    content: https://christiantola.me/en/blog/start-with-angular-cli.html
+  - property: og:type
+    content: article
+  - property: og:title
+    content: Iniciando con Angular CLI
+  - property: og:description
+    content: Angular CLI es una herramienta muy funcional, permite generar un nuevo proyecto y optimizar nuestro flujo de trabajo con angular...
+  - property: og:image
+    content: https://christiantola.me/images/banners/BannerTemplateAngular.jpg
+  - property: og:site_name
+    content: christiantola.me
+  - property: article:author
+    content: https://www.facebook.com/ctola01/
+# twitter
+  - name: twitter:card
+    content: summary
+  - name: twitter:site
+    content: '@ctola91'
+  - name: twitter:title
+    content: Iniciando con Angular CLI
+  - name: twitter:description
+    content: Angular CLI es una herramienta muy funcional, permite generar un nuevo proyecto y optimizar nuestro flujo de trabajo con angular...
+  - name: twitter:image
+    content: https://christiantola.me/images/banners/BannerTemplateAngular.jpg
 ---
 
 # Start with Angular CLI
