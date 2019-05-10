@@ -7,7 +7,7 @@ description:
     Que es el código limpio? por que deberíamos escribir código limpio?
     Aprenderemos mas sobre las bases del código limpio.
 tags: [code, patterns]
-type: code
+type: Code
 meta:
 #  facebook metadata
   # - property: fb:app_id

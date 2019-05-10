@@ -6,7 +6,7 @@ author: Christian Tola
 description:
     Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario.
 tags: [vue]
-type: vue
+type: Vue
 meta:
 #  facebook metadata
   # - property: fb:app_id

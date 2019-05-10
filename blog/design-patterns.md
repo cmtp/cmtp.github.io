@@ -6,7 +6,7 @@ author: Christian Tola
 description:
     En el año 1995 se publico el libro "Design Patterns - Elements of Reusable Object Oriented Software" que se ha convertido los patrones de diseño en una de las partes fundamentales dentro del desarrollo.
 tags: [code, patterns, javascript]
-type: javascript
+type: Javascript
 meta:
 #  facebook metadata
   # - property: fb:app_id

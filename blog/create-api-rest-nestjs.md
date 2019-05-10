@@ -6,7 +6,7 @@ author: Christian Tola
 description:
     Este es el primero de los artículos relacionados a Nest.js, Nest.js es un Framework para el desarrollo backend.
 tags: [Node]
-type: node
+type: Node
 meta:
 #  facebook metadata
   # - property: fb:app_id
