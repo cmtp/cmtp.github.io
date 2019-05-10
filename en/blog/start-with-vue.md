@@ -74,15 +74,14 @@ import Vue from 'import Vue from https://cdn.jsdelivr.net/npm/vue';
 
 ## Getting Started
 
-Para comenzar a utilizar Vue debemos crear en nuestro html un div el cual se conectara con nuestra aplicación Vue.
+To getting started with Vue, We are going to create a div with an id that we will connect our vue app inside our html.
 
 ```html
 <div id="app"></div>
 
 <script src="index.js"></script>
 ```
-Luego en nuestro archivo *index.js* importaremos Vue y crearemos una nueva instancia Vue asociada al id **app** de nuestro html, en el ejemplo estamos usando ES6.
-
+In our *index.js* we import Vue library and create a new Vue instance associated to id **app** of our html, this sample is written in ES6.
 ```js
 import Vue from "https://cdn.jsdelivr.net/npm/vue";
 
