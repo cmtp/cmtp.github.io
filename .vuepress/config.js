@@ -9,7 +9,6 @@ module.exports = {
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       }
     ],
-    ["link", { rel: "icon", href: `/vue.svg` }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ['link', { rel: "icon", href: "favicon.ico" }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
