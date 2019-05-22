@@ -92,22 +92,20 @@ let app = new Vue({
   }
 })
 ```
-el Objeto Vue tiene las propiedades *el* que asocia un elemento html a la instancia Vue y *data* que es donde definimos la fuente de datos de esta instancia, en este caso solo contiene una variable *message* con el valor *'Hello Vue!'*
-
-finalmente agregaremos entre llaves la variable del mensaje que queremos mostrar que esta definido dentro de nuestro *data*
+The Object Vue has the properties *el*, that is the html element that would have the vue instance, and *data* the place where we put the data elements of this instance, in this case we have the variable *message* with the value **Hello Vue!**, finally we add between curly brackets the message that we want to show.
 
 ```html
 <div id="app">
     {{ message }}
 </div>
 ```
-a continuación vemos la aplicación corriendo en [Stackblitz](https://stackblitz.com).
+This is a sample running on [Stackblitz](https://stackblitz.com).
 
 <LiveCode url="https://stackblitz.com/edit/vue-hello?embed=1&file=index.js" />
 
 ## Data Binding
 
-El Data Binding es la sincronización automática de datos entre los datos y la vista que los renderiza.
+Data Binding is the es la sincronización automática de datos entre los datos y la vista que los renderiza.
 
 Vue nos provee una directiva llamada **v-model** para permitirnos hacer data binding entre el modelo y la vista, esto significa que podemos asociar un elemento dentro de la propiedad data y acceder a su valor desde la vista e incluso modificarlo
 
