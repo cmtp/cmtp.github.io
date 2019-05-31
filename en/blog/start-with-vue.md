@@ -31,9 +31,9 @@ meta:
   - name: twitter:site
     content: '@ctola91'
   - name: twitter:title
-    content: Desarrollo Progresivo con Vue.js
+    content: Progressive Development with Vue.js
   - name: twitter:description
-    content: Vue.js Es un Framework Javascript para el desarrollo de interfaces de usuario....
+    content: Vue.js is a Javascript Framework for Single Page Applications....
   - name: twitter:image
     content: https://christiantola.me/images/banners/BannerTemplateVue.jpg
 ---
@@ -105,9 +105,9 @@ This is a sample running on [Stackblitz](https://stackblitz.com).
 
 ## Data Binding
 
-Data Binding is the es la sincronización automática de datos entre los datos y la vista que los renderiza.
+Data Binding is the process that allows to sync the data between the model and the view.
 
-Vue nos provee una directiva llamada **v-model** para permitirnos hacer data binding entre el modelo y la vista, esto significa que podemos asociar un elemento dentro de la propiedad data y acceder a su valor desde la vista e incluso modificarlo
+Vue has the directive **v-model**, that allow to use data binding in our application, we can associate an element in the model with its value on the view.
 
 ```html
 <div id="app">
@@ -127,17 +127,17 @@ let app = new Vue({
 })
 ```
 
-Si modificamos el valor del campo de texto vemos que el texto también es actualizado.
+if we modify the value on textfield, the text would be updated.
 
 <LiveCode url="https://stackblitz.com/edit/vue-model?embed=1&file=index.js" />
 
-## Directivas
+## Directives
 
-Vue utiliza un sistema de directivas dentro del html.
+Vue use many directives inside our html code.
 
 ### v-if
 
-La directiva **v-if** permite renderizar un componente de la aplicación dado una condición. es muy util para agregar o quitar elementos dentro de una aplicación con vue.
+The directive **v-if** allows to render a component if a his condition is true. It is very useful to add o remove elements DOM elements inside our application.
 
 ```html
 <div id="app">
@@ -175,15 +175,15 @@ let app = new Vue({
   }
 })
 ```
-La directiva **v-if** verifica si el valor es true o false, si es true el contenido se añade al DOM.
+**v-if** verify that its value is true or false, if it is true, the content is added to DOM.
 
-La directiva **@click** Provee el evento para el clic del ratón con el cual se llama al método que actualizara el valor de la variable view, las funciones o métodos se definen dentro de la propiedad *methods* y podemos acceder a estas desde el html, en subsiguientes posts se vera mas a profundidad estos conceptos.
+The directive **@click** handle the event when the user click on the button, this event call the method *toogleUser* that update the value of view variable, this is defined inside of the property *methods*. This would be reviewed in next posts.
 
 <LiveCode url="https://stackblitz.com/edit/vue-conditional?embed=1&file=index.html" />
 
 ### v-for
 
-La directiva **v-for** nos permite renderizar arreglos de elementos que hayamos definido dentro de la instancia Vue.
+**v-for** allows to render an array of elements that we have defined inside our vue instance.
 
 ```html
 <div id="app">
@@ -224,15 +224,15 @@ let app = new Vue({
 });
 ```
 
-Esto es especialmente util para cuando necesitemos mostrar listas o tablas a partir de un array de datos.
+This would be very helpful when we would need to show a list, a table, etc.
 
 <LiveCode url="https://stackblitz.com/edit/vue-for?embed=1&file=index.html"/>
 
-Aca termina esta introducción al Framework Vue, en próximos posts revisaremos los eventos dentro de Vue, funciones o métodos y las propiedades computadas,
+In Next post we are going to review the events, methods and computed properties in vue.
 
-Saludos.
+Regards.
 
-**Compártelo en tus redes Sociales!**
+**Share in you=r Social Networks!**
 <SocialButtons />
 
 <Disqus />
