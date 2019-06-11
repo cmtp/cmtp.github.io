@@ -49,29 +49,29 @@ module.exports = {
         //     '/': [/* ... */],
         //     '/nested/': [/* ... */]
         //   }
+      },
+      '/en/': {
+          title: 'My Syte',
+          selectText: 'Languages',
+          label: 'English',
+          //   editLinkText: '在 GitHub 上编辑此页',
+          serviceWorker: {
+              updatePopup: {
+                  message: "New content is available.",
+                  buttonText: "Refresh"
+              }
+          },
+          nav: [
+              { text: 'Home', link: '/en/' },
+              { text: 'Blog', link: '/en/blog/' },
+              { text: 'About', link: '/en/about/' }
+          ],
+          algolia: {},
+          //   sidebar: {
+          //     '/zh/': [/* ... */],
+          //     '/zh/nested/': [/* ... */]
+          //   }
       }
-      // '/en/': {
-      //     title: 'My Syte',
-      //     selectText: 'Languages',
-      //     label: 'English',
-      //     //   editLinkText: '在 GitHub 上编辑此页',
-      //     serviceWorker: {
-      //         updatePopup: {
-      //             message: "New content is available.",
-      //             buttonText: "Refresh"
-      //         }
-      //     },
-      //     nav: [
-      //         { text: 'Home', link: '/en/' },
-      //         { text: 'Blog', link: '/en/blog/' },
-      //         { text: 'About', link: '/en/about/' }
-      //     ],
-      //     algolia: {},
-      //     //   sidebar: {
-      //     //     '/zh/': [/* ... */],
-      //     //     '/zh/nested/': [/* ... */]
-      //     //   }
-      // }
     }
   },
   configureWebpack: {
@@ -90,11 +90,11 @@ module.exports = {
       lang: "es-ES", // this will be set as the lang attribute on <html>
       title: `christiantola.me`,
       description: `Blog de Christian hecho en Vue`
+    },
+    '/en/': {
+        lang: 'en-US',
+        title: 'christiantola.me',
+        description: `Vue-powered Christian's Blog`
     }
-    // '/en/': {
-    //     lang: 'en-US',
-    //     title: 'christiantola.dev',
-    //     description: `Vue-powered Christian's Blog`
-    // }
   }
 };

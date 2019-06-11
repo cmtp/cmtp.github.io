@@ -1,5 +1,5 @@
 ---
-title: Código Limpio
+title: Clean Code
 date: 2018-11-26
 author: Christian Tola
 description:
@@ -16,9 +16,9 @@ meta:
   - property: og:type
     content: article
   - property: og:title
-    content: Código Limpio
+    content: Clean Code
   - property: og:description
-    content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
+    content: What is clean code? Why should we write clean clode? We are going to learn about the basis of Clean Code.
   - property: og:image
     content: https://christiantola.me/images/posts/clean-code.jpg
   - property: og:site_name
@@ -31,9 +31,9 @@ meta:
   - name: twitter:site
     content: '@ctola91'
   - name: twitter:title
-    content: Código Limpio
+    content: Clean Code
   - name: twitter:description
-    content: Que es el código limpio? por que deberíamos escribir código limpio? Aprenderemos mas sobre las bases del código limpio.
+    content: What is clean code? Why should we write clean clode? We are going to learn about the basis of Clean Code.
   - name: twitter:image
     content: https://christiantola.me/images/posts/clean-code.jpg
 ---
