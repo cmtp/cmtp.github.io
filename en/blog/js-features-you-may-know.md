@@ -45,7 +45,7 @@ meta:
 
 <Info />
 
-Javascript es un lenguaje muy poderoso, con una gran comunidad por detrás,
+Javascript es un lenguaje muy poderoso, con una gran comunidad por detrás, e infinidad de Frameworks o librerias, este lenguaje fue creado por **Brendan Eich** con el nombre de **mocha** (no confundir con el Framwork de testing [Mocha](https://mochajs.org/)) mientras se encontraba trabajando en Netscape, no pasaria mucho tiempo para que luego el lenguaje fuera renombrado a **LiveScript**, luego Netscape seria adquirido por SUN 
 
 **Compártelo en tus redes Sociales!**
 <SocialButtons />
