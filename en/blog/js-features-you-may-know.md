@@ -45,7 +45,11 @@ meta:
 
 <Info />
 
-Javascript es un lenguaje muy poderoso, con una gran comunidad por detrás, e infinidad de Frameworks o librerias, este lenguaje fue creado por **Brendan Eich** con el nombre de **mocha** (no confundir con el Framwork de testing [Mocha](https://mochajs.org/)) mientras se encontraba trabajando en Netscape, no pasaria mucho tiempo para que luego el lenguaje fuera renombrado a **LiveScript**, luego Netscape seria adquirido por SUN 
+Javascript es un lenguaje muy poderoso, con una gran comunidad por detrás, e infinidad de Frameworks o librerías, este lenguaje fue creado por **Brendan Eich** con el nombre de **mocha** (no confundir con el Framework de testing [Mocha](https://mochajs.org/)) mientras se encontraba trabajando en Netscape, no pasaria mucho tiempo para que luego el lenguaje fuera renombrado a **[LiveScript](https://en.wikipedia.org/wiki/JavaScript#Beginnings_at_Netscape)**, luego Netscape seria adquirido por SUN y por una estrategia de marketing el nombre final seria **Javascript**, al mismo tiempo Microsoft saco una version similar conocida como **[Jscript](https://en.wikipedia.org/wiki/JScript)** en su navegador Internet Explorer 3, para evitar que todos los navegadores hicieran versiones similares que llevarían a competir entre ellos, se decidió que lo mejor seria estandarizar el lenguaje, de ahi que la version de javascript 1.1 se envió a la *ECMA* (European Computer Manufacturers Association) que creo el comite *TC39* para estandarizar el lenguaje, asi es como se creo el estandar ECMA-262 en el que se define por primera vez el lenguaje **ECMAScript**.
+
+
+
+Para evitar que los navegadores hicieran 
 
 **Compártelo en tus redes Sociales!**
 <SocialButtons />
