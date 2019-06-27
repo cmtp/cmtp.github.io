@@ -53,7 +53,28 @@ Las actualizaciones del estándar son periódicas, se proponen y se revisan posi
 
 Con esta introducción entendemos un poco mas sobre que es ECMAScript, y por que es importante cuando escribimos código Javascript, en este articulo iremos agregando los features que deberíamos conocer para empezar a crear aplicaciones, ya sea utilizando el estándar(ES5, ES6, ES7, ES8, etc.) o algún Framework, para el desarrollo de aplicaciones del lado del cliente(Angular, Vue, React).
 
-## ECMAScript 2015 (ES6)
+## LET Y CONST (ES6)
+
+Para declarar variables en javascript generalmente utilizamos la palabra reservada **var**, pero al utilizar la palabra var estamos creando una variable global dentro del ámbito de toda la aplicación, pruebe en la consola del navegador hacer lo siguiente:
+
+```js
+var title = 'Hello World';
+console.log(window.title); // Hello World
+```
+
+Como vera al hacer ```console.log(window.title);``` este imprime el valor de la variable title.
+
+![var sample](./images/js-features-you-may-know/first.jpg)
+
+otro ejemplo es cuando utilizamos la sentencia **for**:
+
+```js
+for(var i = 0; i <= 10; i++) {
+  console.log(i); // 1, 2, 3, ... , 10
+}
+console.log(i) // 11
+```
+en este caso podemos ver que la variable *i* sigue activa luego de haber finalizado el bucle, devolviendonos el ultimo valor.
 
 
 
