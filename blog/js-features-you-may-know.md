@@ -74,8 +74,15 @@ for(var i = 0; i <= 10; i++) {
 }
 console.log(i) // 11
 ```
-en este caso podemos ver que la variable *i* sigue activa luego de haber finalizado el bucle, devolviendonos el ultimo valor.
+en este caso podemos ver que la variable *i* sigue activa luego de haber finalizado el bucle, regresando el ultimo valor que fue asignado a la variable *i*, esto podria ocasionar errores mas adelante si volvemos a llamar a la variable i global, para evitar este problema nace la sentencia **let**.
 
+```js
+for(let i = 0; i <= 10; i++) {
+  console.log(i); // 1, 2, 3, ... , 10
+}
+console.log(i); // ReferenceError: i is not defined
+```
+como la variable *i* solo existe dentro del ambito del bucle fuera de este causa un error.
 
 
 **Compártelo en tus redes Sociales!**
