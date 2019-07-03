@@ -53,7 +53,7 @@ Las actualizaciones del estándar son periódicas, se proponen y se revisan posi
 
 Con esta introducción entendemos un poco mas sobre que es ECMAScript, y por que es importante cuando escribimos código Javascript, en este articulo iremos agregando los features que deberíamos conocer para empezar a crear aplicaciones, ya sea utilizando el estándar(ES5, ES6, ES7, ES8, etc.) o algún Framework, para el desarrollo de aplicaciones del lado del cliente(Angular, Vue, React).
 
-## LET Y CONST (ES6)
+## LET (ES6)
 
 Para declarar variables en javascript generalmente utilizamos la palabra reservada **var**, pero al utilizar la palabra var estamos creando una variable global dentro del ámbito de toda la aplicación, pruebe en la consola del navegador hacer lo siguiente:
 
@@ -74,7 +74,7 @@ for(var i = 0; i <= 10; i++) {
 }
 console.log(i) // 11
 ```
-en este caso podemos ver que la variable *i* sigue activa luego de haber finalizado el bucle, regresando el ultimo valor que fue asignado a la variable *i*, esto podria ocasionar errores mas adelante si volvemos a llamar a la variable i global, para evitar este problema nace la sentencia **let**.
+en este caso podemos ver que la variable *i* sigue activa luego de haber finalizado el bucle, regresando el ultimo valor que fue asignado a la variable *i*, esto podría ocasionar errores mas adelante si volvemos a llamar a la variable i global, para evitar este problema nace la sentencia **let**.
 
 ```js
 for(let i = 0; i <= 10; i++) {
@@ -82,8 +82,40 @@ for(let i = 0; i <= 10; i++) {
 }
 console.log(i); // ReferenceError: i is not defined
 ```
-como la variable *i* solo existe dentro del ambito del bucle fuera de este causa un error.
+como la variable *i* solo existe dentro del ámbito del bucle fuera de este causa un error.
 
+La palabra reservada *let* nos permite crear variables que pertenecen solo al ámbito del bloque donde se declaran, ademas de evitar el *Hoisting*.
+
+## const (ES6)
+
+Para asignar valores que no van a cambiar en el tiempo (Constantes), utilizamos la sentencia **const**.
+
+```js
+const PI = 3.14;
+PI = 123; // TypeError: Assignment to constant variable.
+```
+los valores que son declarados con const una vez asignados no pueden reasignarse, útiles al momento de declarar constantes dentro de nuestra aplicación.
+
+![const sample](./images/js-features-you-may-know/second.jpg)
+
+Cuando almacenamos objetos utilizando la sentencia *const* la referencia al objeto no se puede cambiar, pero si es posible modificar sus atributos.
+
+```js
+const person = {
+  name: 'Christian',
+  lastName: 'Tola'
+};
+console.log(person); // { name: 'Christian', lastName: 'Tola' }
+
+person.name = 'Marcelo';
+console.log(person); // { name: 'Marcelo', lastName: 'Tola' }
+```
+
+![const sample object](./images/js-features-you-may-know/third.jpg)
+
+## Spread Operator (ES6)
+
+El Operador de Propagación (spread operator) 
 
 **Compártelo en tus redes Sociales!**
 <SocialButtons />
