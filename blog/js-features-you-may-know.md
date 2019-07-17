@@ -115,7 +115,113 @@ console.log(person); // { name: 'Marcelo', lastName: 'Tola' }
 
 ## Spread Operator (ES6)
 
-El Operador de Propagación (spread operator) 
+El Operador de Propagación (spread operator) convierte on objeto iterable en valores individuales, muy util al momento de utilizar arrays u objetos para pasar valores.
+
+```js
+// Merge two arrays
+
+let newUsers = ['tester', 'dev', 'dbadmin', 'devops'];
+oldUsers = ['admin'];
+allUsers = [ ...oldUsers, ...newUsers ]; // ['admin', 'tester', 'dev', 'dbadmin', 'devops']
+
+/// add array inside another array
+
+let courses = ['sql', 'js', 'c#', 'java'];
+
+let languages = ['python', 'go'];
+
+courses.push(...languages); // ['sql', 'js', 'c#', 'java','python', 'go']
+```
+
+## Rest Parameter (ES6)
+
+Es lo contrario de el operador spread, convierte una lista de elementos a un array, util al momento de enviar múltiples parámetros a una función.
+
+```js
+function setNumbers(param1, param2, ...args) {
+  console.log(param1); // 1
+  console.log(param2); // 2
+
+  console.log(args); // [3, 4, 5, 6]
+}
+
+setNumbers(1, 2, 3,4,5,6);
+```
+
+## Destructuring (ES6)
+
+La desestructuracion es uno de los features que trae ES6 que son mas usados, varias librerias se aprovechan de esta funcionalidad.
+
+La desestructuracion hace posible la extracción de datos de arreglos u objetos a valores simples, todo en una sola sentencia, veamos un ejemplo:
+
+```js
+var 
+// antes de ES6
+var name = myUser.name; // Christian
+var lastName = myUser.lastName; // Tola
+var age = myUser.age;  // 28
+
+// con ES6
+let myUser = { name: 'Christian', lastName: 'Tola', age: 28};
+const { name, lastName, age } = myUser;
+```
+lo mismo aplica para los arreglos, la desestructuracion se aplica en base a las posiciones del arreglo.
+
+```js
+let numbers = ['1', '2'];
+
+const [first, second] = numbers;
+console.log(first); // 1
+console.log(second); // 2
+```
+Es posible agregar valores por defecto en el caso que alguno de los elementos sea undefined.
+```js
+...
+const { id, name = 'generic', description = 'test'} = element;
+...
+
+```
+y tambien ser usados en parametros de funciones:
+```js
+const registerUser = ({name, lastName, age}) => {
+  ...
+  console.log(name); // Christian
+  console.log(lastName); // Tola
+  console.log(age); // 28
+}
+
+let myUser = { name: 'Christian', lastName: 'Tola', age: 28};
+registerUser(myUser);
+```
+
+## Arrow Functions (ES6)
+ES6 provee una nueva forma de crear funciones usando el operador flecha (=>), recuerdas las funciones anonimas? con la nueva sintaxis de las funciones flecha estas son mas resumidas:
+```js
+// antes de ES6
+setTimeout(function () {
+  console.log('hello world');
+}, 1000);
+
+// con Es6
+setTimeout(() => {
+  console.log('hello world');
+}, 1000)
+
+```
+
+## Template Literals
+
+## Map, WeakMap, 
+
+## Classes
+
+## Static Methods
+
+## Promises
+
+## Async/Await
+
+## Object Assign
 
 **Compártelo en tus redes Sociales!**
 <SocialButtons />
