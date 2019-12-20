@@ -40,10 +40,9 @@ meta:
 ---
 
 # Código Limpio parte 1
+<Info />
 
 <Banner url="clean-code.jpg" alt="Clean code"/>
-
-<Info />
 
 *Este es el primer articulo de la serie de código limpio donde iremos agregando consejos de como mejorar nuestro código.*
 

@@ -14,7 +14,7 @@ export default {};
 </script>
 <style scoped>
 .content.custom {
-    max-width: 740px;
+    max-width: 944px;
     margin: 0 auto;
     padding: 2rem 2.5rem;
 }

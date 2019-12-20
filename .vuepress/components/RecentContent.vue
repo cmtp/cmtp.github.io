@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="post in recentFiles">
+  <div class="recent-posts">
+    <div v-for="post in recentFiles" class="post">
       <!-- <h2>
                 <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
             </h2>
@@ -53,5 +53,15 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
+.recent-posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.post {
+    width: 30%;
+  }
 </style>

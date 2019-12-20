@@ -40,10 +40,9 @@ meta:
 ---
 
 # Iniciando con Angular CLI
+<Info />
 
 <Banner url="start-with-angular-cli.jpg" alt="start with angular cli"/>
-
-<Info />
 
 Bienvenidos, en este post veremos las ventajas de utilizar Angular CLI dentro de nuestro flujo de trabajo
 

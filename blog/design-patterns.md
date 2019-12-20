@@ -39,10 +39,9 @@ meta:
 ---
 
 # Patrones de Diseño
+<Info />
 
 <Banner url="design-patterns.jpg" alt="Design patterns"/>
-
-<Info />
 
 ## Que son?
 

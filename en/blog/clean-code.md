@@ -39,8 +39,9 @@ meta:
 ---
 
 # Clean Code part 1
-
 <Info />
+
+<Banner url="clean-code.jpg" alt="Clean code"/>
 
 *This is the first post of Clean Code Series, we are going to add tips on how to get better our code.*
 

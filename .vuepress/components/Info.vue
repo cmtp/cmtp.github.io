@@ -38,6 +38,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  margin-bottom: 10px;
 }
 .container > div {
   margin-right: 10px;

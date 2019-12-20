@@ -1,20 +1,22 @@
 <template>
   <div class="card">
-    <div class="card-title">
-      <h2>
-        <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
-      </h2>
-    </div>
     <div class="card-img">
       <!-- img -->
       <router-link :to="post.path">
         <img :src="$withBase('/images/banners/BannerTemplate' + post.frontmatter.type + '.jpg')" :alt="post.frontmatter.type">
       </router-link>
     </div>
+    <div class="card-title">
+      <h3>
+        <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
+      </h3>
+    </div>
+    
     <div class="card-resume">
-      <span>{{ date(post) }}</span>
+      <small>{{ date(post) }}</small>
       <!-- description -->
-      <p>{{ post.frontmatter.description }}</p>
+      <p class="truncate">
+        <router-link :to="post.path">{{ post.frontmatter.description }}</router-link></p>
       <!-- read more -->
       <p>
         <router-link :to="post.path">{{ readMoreText }}</router-link>
@@ -61,16 +63,15 @@ export default {
   }
 }
 .card {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "header header" "logo resume" "footer footer";
   /* box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
   margin-bottom: 15px;
-  padding: 0 15px 0 15px;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
 }
 .card-title {
   grid-area: header;
@@ -80,9 +81,30 @@ export default {
 }
 .card-resume {
   grid-area: resume;
-  margin-left: 15px;
 }
 .card-footer {
   grid-area: footer;
+}
+.truncate {
+  text-align: justify;
+  --lh: 1.4rem;
+  line-height: var(--lh);
+  --max-lines: 3;
+   position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem; /* space for ellipsis */
+}
+.truncate::before {
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.truncate a {
+  color: #2c3e50;
+}
+h3 {
+  margin: 0;
 }
 </style>

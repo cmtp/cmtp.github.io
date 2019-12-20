@@ -39,10 +39,9 @@ meta:
 ---
 
 # Desarrollo Progresivo con Vue.js
+<Info />
 
 <Banner url="start-with-vue.jpg" alt="start with vue"/>
-
-<Info />
 
 Vue.js es un Framework Javascript para el desarrollo de interfaces de usuario, su principal característica es la flexibilidad que ofrece al momento de desarrollar tanto aplicaciones pequeñas hasta aplicaciones empresariales de gran tamaño.
 

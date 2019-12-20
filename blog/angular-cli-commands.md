@@ -39,10 +39,9 @@ meta:
 ---
 
 # Comandos en Angular CLI
+<Info />
 
 <Banner url="angular-cli-commands.jpg" alt="Angular CLI Commands"/>
-
-<Info />
 
 En este post veremos mas a profundidad los comandos que el Angular CLI nos ofrece y su uso.
 

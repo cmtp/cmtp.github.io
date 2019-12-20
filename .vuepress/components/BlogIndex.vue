@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="post in posts">
+  <div class="blog-list">
+    <div v-for="post in posts" class="blog-item">
       <Card :post="post"/>
     </div>
   </div>
@@ -31,4 +31,13 @@ export default {
 };
 </script>
 <style scoped>
+.blog-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog-item {
+  width: 30%;
+}
 </style>

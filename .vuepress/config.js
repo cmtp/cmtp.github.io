@@ -9,6 +9,9 @@ module.exports = {
           "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       }
     ],
+    [
+      "link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap"}
+    ],
     ["link", { rel: "manifest", href: "/manifest.json" }],
     ['link', { rel: "icon", href: "/favicon.ico" }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -88,12 +91,12 @@ module.exports = {
     // As a special case, the default locale can use '/' as its path.
     "/": {
       lang: "es-ES", // this will be set as the lang attribute on <html>
-      title: `christiantola.me`,
+      title: 'ChristianTola',
       description: `Blog de Christian hecho en Vue`
     },
     '/en/': {
         lang: 'en-US',
-        title: 'christiantola.me',
+        title: 'ChristianTola',
         description: `Vue-powered Christian's Blog`
     }
   }

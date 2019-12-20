@@ -39,10 +39,9 @@ meta:
 ---
 
 # Crear un Api Rest con Nest.js
+<Info />
 
 <Banner url="create-api-rest-nestjs.jpg" alt="create api rest nest"/>
-
-<Info />
 
 Node.js es un entorno de programación que permite crear aplicaciones en el lado del servidor utilizando Javascript como lenguaje principal, esto ha generado mucha popularidad entre los desarrolladores ya que permite desarrollar una aplicación en todos sus niveles (Base de datos, Backend, Frontend) con Javascript.
 

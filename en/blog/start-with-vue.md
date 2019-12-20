@@ -39,10 +39,9 @@ meta:
 ---
 
 # Progressive Development with Vue.js
+<Info />
 
 <Banner alt="start with vue"/>
-
-<Info />
 
 Vue.js is a Javascript Framework for User Interface Development, it allows to create from small apps to more structured and complex big applications.
 
