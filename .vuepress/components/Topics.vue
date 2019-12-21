@@ -2,9 +2,9 @@
   <div class="container">
     <router-link :to="this.$localePath + 'tags/vue.html'">
     <div class="topic">
-      <div class="topic-title">
+      <!-- <div class="topic-title">
         <h3>Vue</h3>
-      </div>
+      </div> -->
       <div class="bg-topic">
         <img :src="$withBase('/vue.svg')" alt="Vue">
       </div>
@@ -12,9 +12,9 @@
     </router-link>
     <router-link :to="this.$localePath + 'tags/angular.html'">
     <div class="topic">
-      <div class="topic-title">
+      <!-- <div class="topic-title">
         <h3>Angular</h3>
-      </div>
+      </div> -->
       <div class="bg-topic">
         <img :src="$withBase('/angular.svg')" alt="Angular">
       </div>
@@ -22,9 +22,9 @@
     </router-link>
     <router-link :to="this.$localePath + 'tags/react.html'">
     <div class="topic">
-      <div class="topic-title">
+      <!-- <div class="topic-title">
         <h3>React</h3>
-      </div>
+      </div> -->
       <div class="bg-topic">
         <img :src="$withBase('/react.svg')" alt="React">
       </div>
@@ -32,9 +32,9 @@
     </router-link>
     <router-link :to="this.$localePath + 'tags/node.html'">
     <div class="topic">
-      <div class="topic-title">
+      <!-- <div class="topic-title">
         <h3>NodeJs</h3>
-      </div>
+      </div> -->
       <div class="bg-topic">
         <img :src="$withBase('/node.svg')" alt="Nodejs">
       </div>
@@ -62,9 +62,9 @@
     </router-link> -->
     <router-link :to="this.$localePath + 'tags/javascript.html'">
     <div class="topic">
-      <div class="topic-title">
+      <!-- <div class="topic-title">
         <h3>Javascript</h3>
-      </div>
+      </div> -->
       <div class="bg-topic">
         <img :src="$withBase('/javascript.svg')" alt="Javascript">
       </div>
@@ -82,9 +82,9 @@
     </router-link> -->
     <router-link :to="this.$localePath + 'tags/code.html'">
     <div class="topic">
-      <div class="topic-title">
+      <!-- <div class="topic-title">
         <h3> {{this.$localePath.indexOf('en') > -1 ? 'Code': 'Programación'}}</h3>
-      </div>
+      </div> -->
       <div class="bg-topic">
         <img :src="$withBase('/code.svg')" alt="Programacion">
       </div>
@@ -98,25 +98,24 @@ export default {};
 <style scoped>
 @media screen and (max-width: 450px) {
   .container {
-    grid-template-columns: 1fr !important;
+    /* grid-template-columns: 1fr !important; */
   }
 }
 @media (min-width: 451px) and (max-width: 740px) {
   .container {
-    grid-template-columns: 1fr 1fr !important;
+    /* grid-template-columns: 1fr 1fr !important; */
   }
 }
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .container > a {
   margin: 10px;
   text-align: center;
 }
 .topic {
-  border: solid 2px #ddd;
   text-align: center;
 }
 .topic-title h3 {
