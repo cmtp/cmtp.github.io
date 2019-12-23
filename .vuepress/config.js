@@ -46,7 +46,8 @@ module.exports = {
         nav: [
           { text: "Inicio", link: "/" },
           { text: "Blog", link: "/blog/" },
-          { text: "Sobre mi", link: "/about/" }
+          { text: "Sobre mi", link: "/about/" },
+          { text: "Contactame", link: "/contact/" }
         ]
         //   sidebar: {
         //     '/': [/* ... */],
@@ -67,7 +68,9 @@ module.exports = {
           nav: [
               { text: 'Home', link: '/en/' },
               { text: 'Blog', link: '/en/blog/' },
-              { text: 'About', link: '/en/about/' }
+              { text: 'About', link: '/en/about/' },
+              { text: "Contact", link: "/contact/" }
+
           ],
           algolia: {},
           //   sidebar: {
