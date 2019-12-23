@@ -1,14 +1,7 @@
 <template>
   <div class="recent-posts">
     <div v-for="post in recentFiles" class="post">
-      <!-- <h2>
-                <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
-            </h2>
-            <span>{{ date(post) }}</span>
-            <p>{{ post.frontmatter.description }}</p>
-
-      <p><router-link :to="post.path">Read more</router-link></p>-->
-      <Card :post="post"/>
+      <Card :post="post" />
     </div>
   </div>
 </template>
@@ -38,7 +31,7 @@ export default {
           if (diff < 0) return 1;
           return 0;
         })
-        .slice(0, 5);
+        .slice(0, 3);
       return files;
     }
   },
@@ -59,9 +52,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
 }
 .post {
-    width: 30%;
-  }
+  width: 30%;
+}
 </style>
