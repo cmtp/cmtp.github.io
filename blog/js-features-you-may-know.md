@@ -210,13 +210,47 @@ setTimeout(() => {
 
 ## Template Literals
 
-## Map, WeakMap, 
+Es una nueva forma de crear cadenas de texto que nos permite crear cadenas de texto mas dinamicas ademas de tener soporte de multilinea.
+```js
+// antes de ES6
+var dinamicText = "Hi my name is: " + name + ", I am a " + workPosition;
+// con ES6
+let dimanicText = `Hi my name is: ${name}, I am a ${workPosition}`;
+```
+
+## Map, WeakMap
+
+De manera sencilla, el metodo ```map()``` devuelve un nuevo array al que se le aplican operaciones para trasformar sus elementos, un ejemplo seria sacar la raiz cuadrada de todos los elementos del array:
+
+```js
+let array = [ 1, 4, 9];
+let newArray = array.map(e => Math.sqrt(e));
+console.log(array); // [1, 4, 9]
+console.log(newArray); //Resultado [1, 2, 3]
+```
 
 ## Classes
 
-## Static Methods
+Es una nueva sintaxis para la herencia basada en prototipos, 
+no sufren del efecto de *hoisting*, por ende no se pueden utilizar si no han sido declaradas primero.
+```js
+class Person {
+    constructor(firstname, lastname, birthday) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.birthday = new Date(birthday);
+    }
+    getAge() {
+        var ageDifMs = Date.now() - this.birthday.getTime();
+        var ageDate = new Date(ageDifMs);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+}
+```
 
 ## Promises
+
+Una Promesa (Promise) es un objeto que representa 
 
 ## Async/Await
 
