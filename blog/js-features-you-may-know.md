@@ -1,7 +1,7 @@
 ---
 title: Características de Javascript que aprender
 layout: PostLayout
-date: 2019-06-11
+date: 2019-12-25
 author: Christian Tola
 description:
     Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y mas, en este post veremos las características mas importantes que deberíamos conocer para mejorar nuestro código...
@@ -149,9 +149,9 @@ setNumbers(1, 2, 3,4,5,6);
 
 ## Destructuring (ES6)
 
-La desestructuracion es uno de los features que trae ES6 que son mas usados, varias librerias se aprovechan de esta funcionalidad.
+La desestructuración es uno de los features que trae ES6 que son mas usados, varias librerías se aprovechan de esta funcionalidad.
 
-La desestructuracion hace posible la extracción de datos de arreglos u objetos a valores simples, todo en una sola sentencia, veamos un ejemplo:
+La desestructuración hace posible la extracción de datos de arreglos u objetos a valores simples, todo en una sola sentencia, veamos un ejemplo:
 
 ```js
 var 
@@ -164,7 +164,7 @@ var age = myUser.age;  // 28
 let myUser = { name: 'Christian', lastName: 'Tola', age: 28};
 const { name, lastName, age } = myUser;
 ```
-lo mismo aplica para los arreglos, la desestructuracion se aplica en base a las posiciones del arreglo.
+lo mismo aplica para los arreglos, la desestructuración se aplica en base a las posiciones del arreglo.
 
 ```js
 let numbers = ['1', '2'];
@@ -180,7 +180,7 @@ const { id, name = 'generic', description = 'test'} = element;
 ...
 
 ```
-y tambien ser usados en parametros de funciones:
+y también ser usados en parámetros de funciones:
 ```js
 const registerUser = ({name, lastName, age}) => {
   ...
@@ -250,11 +250,48 @@ class Person {
 
 ## Promises
 
-Una Promesa (Promise) es un objeto que representa 
+Una Promesa (Promise) es un objeto que representa la terminacion o el fracaso eventual de una operacion asincrona.
+
+```js
+// creacion de promesas
+function fetchItems(url) {
+  return new Promise((resolve, reject) => {
+    // ...
+
+    if(/*error condition*/) {
+      return reject();
+    }
+    return resolve();
+  });
+}
+// uso de promesas
+fetchItems('/items')
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
+
+```
+Aca les envio un link con una muy buena explicacion de lo que son las promesas y su uso.
+
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 
 ## Async/Await
 
-## Object Assign
+La palabra reservada ```async``` define una funcion asincrona que retorna un objeto ```AsyncFunction```.
+
+```js
+renderItems => async () => {
+  let data = await fetchItems('/items');
+  if(data.error) {
+    throw new Error(data.error);
+  }
+  console.log(data.results);
+}
+```
+
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+
+Hasta aqui hemos agregado los feature que cualquier desarrollador Javascript deberia saber.
+Hasta pronto!
 
 **Compártelo en tus redes Sociales!**
 <SocialButtons />

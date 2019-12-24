@@ -27,7 +27,7 @@ module.exports = {
   themeConfig: {
     locales: {
       "/": {
-        title: "Mi sitio",
+        title: "ChristianTola",
         // text for the language dropdown
         selectText: "Idiomas",
         // label for this locale in the language dropdown
@@ -47,7 +47,7 @@ module.exports = {
           { text: "Inicio", link: "/" },
           // { text: "Blog", link: "/blog/" },
           { text: "Sobre mi", link: "/about/" },
-          { text: "Contactame", link: "/contact/" }
+          { text: "Contacto", link: "/contact/" }
         ]
         //   sidebar: {
         //     '/': [/* ... */],
@@ -55,7 +55,7 @@ module.exports = {
         //   }
       },
       '/en/': {
-          title: 'My Syte',
+          title: 'ChristianTola',
           selectText: 'Languages',
           label: 'English',
           //   editLinkText: '在 GitHub 上编辑此页',
