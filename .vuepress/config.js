@@ -54,30 +54,30 @@ module.exports = {
         //     '/nested/': [/* ... */]
         //   }
       },
-      '/en/': {
-          title: 'ChristianTola',
-          selectText: 'Languages',
-          label: 'English',
-          //   editLinkText: '在 GitHub 上编辑此页',
-          serviceWorker: {
-              updatePopup: {
-                  message: "New content is available.",
-                  buttonText: "Refresh"
-              }
-          },
-          nav: [
-              { text: 'Home', link: '/en/' },
-              // { text: 'Blog', link: '/en/blog/' },
-              { text: 'About', link: '/en/about/' },
-              { text: "Contact", link: "/contact/" }
+      // '/en/': {
+      //     title: 'ChristianTola',
+      //     selectText: 'Languages',
+      //     label: 'English',
+      //     //   editLinkText: '在 GitHub 上编辑此页',
+      //     serviceWorker: {
+      //         updatePopup: {
+      //             message: "New content is available.",
+      //             buttonText: "Refresh"
+      //         }
+      //     },
+      //     nav: [
+      //         { text: 'Home', link: '/en/' },
+      //         // { text: 'Blog', link: '/en/blog/' },
+      //         { text: 'About', link: '/en/about/' },
+      //         { text: "Contact", link: "/contact/" }
 
-          ],
-          algolia: {},
-          //   sidebar: {
-          //     '/zh/': [/* ... */],
-          //     '/zh/nested/': [/* ... */]
-          //   }
-      }
+      //     ],
+      //     algolia: {},
+      //     //   sidebar: {
+      //     //     '/zh/': [/* ... */],
+      //     //     '/zh/nested/': [/* ... */]
+      //     //   }
+      // }
     }
   },
   configureWebpack: {
@@ -97,10 +97,10 @@ module.exports = {
       title: 'ChristianTola',
       description: `Blog de Christian hecho en Vue`
     },
-    '/en/': {
-        lang: 'en-US',
-        title: 'ChristianTola',
-        description: `Vue-powered Christian's Blog`
-    }
+    // '/en/': {
+    //     lang: 'en-US',
+    //     title: 'ChristianTola',
+    //     description: `Vue-powered Christian's Blog`
+    // }
   }
 };

@@ -30,5 +30,6 @@
     "cSpell.words": [
         "optimizaciones"
     ],
-    "cSpell.language": "es"
+    "cSpell.language": "es",
+    "cSpell.enabled": false
 }
