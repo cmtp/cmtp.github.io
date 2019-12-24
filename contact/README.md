@@ -1,8 +1,12 @@
 ---
-title: Contactame
+title: Contacto
 layout: HomeLayout
 ---
-# Contactame
+# Contacto
+
+
+
+<ContactForm />
 
 Puedes encontrarme por twitter como [@ctola91](https://twitter.com/ctola91).
 
