@@ -45,7 +45,7 @@ module.exports = {
         algolia: {},
         nav: [
           { text: "Inicio", link: "/" },
-          { text: "Blog", link: "/blog/" },
+          // { text: "Blog", link: "/blog/" },
           { text: "Sobre mi", link: "/about/" },
           { text: "Contactame", link: "/contact/" }
         ]
@@ -67,7 +67,7 @@ module.exports = {
           },
           nav: [
               { text: 'Home', link: '/en/' },
-              { text: 'Blog', link: '/en/blog/' },
+              // { text: 'Blog', link: '/en/blog/' },
               { text: 'About', link: '/en/about/' },
               { text: "Contact", link: "/contact/" }
 

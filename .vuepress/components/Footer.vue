@@ -37,4 +37,8 @@ footer {
 .footer-links a {
   margin-right: 30px;
 }
+p {
+  max-width: 1024px;
+  margin: auto;
+}
 </style>
