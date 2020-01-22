@@ -4,7 +4,7 @@ layout: PostLayout
 date: 2019-12-25
 author: Christian Tola
 description:
-    Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y mas, en este post veremos las características mas importantes que deberíamos conocer para mejorar nuestro código...
+    Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y más, en este post veremos las características más importantes que deberíamos conocer para mejorar nuestro código...
 tags: [javascript]
 type: Javascript
 meta:
@@ -18,7 +18,7 @@ meta:
   - property: og:title
     content: Características de Javascript que aprender
   - property: og:description
-    content: Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y mas, en este post veremos las características mas importantes que deberíamos conocer para mejorar nuestro código...
+    content: Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y más, en este post veremos las características más importantes que deberíamos conocer para mejorar nuestro código...
   - property: og:image
     content: https://christiantola.me/images/banners/BannerTemplateJavascript.jpg
   - property: og:site_name
@@ -33,7 +33,7 @@ meta:
   - name: twitter:title
     content: Características de Javascript que aprender
   - name: twitter:description
-    content: Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y mas, en este post veremos las características mas importantes que deberíamos conocer para mejorar nuestro código...
+    content: Javascript va mejorando a pasos agigantados, actualmente contamos con es5, es6, y más, en este post veremos las características más importantes que deberíamos conocer para mejorar nuestro código...
   - name: twitter:image
     content: https://christiantola.me/images/banners/BannerTemplateJavascript.jpg
 ---
@@ -46,9 +46,9 @@ meta:
 
 ## Introducción 
 
-Javascript es un lenguaje muy poderoso, con una gran comunidad por detrás, e infinidad de Frameworks o librerías, este lenguaje fue creado por **Brendan Eich** con el nombre de **mocha** (no confundir con el Framework de testing [Mocha](https://mochajs.org/)) mientras se encontraba trabajando en Netscape, no pasaria mucho tiempo para que luego el lenguaje fuera renombrado a **[LiveScript](https://en.wikipedia.org/wiki/JavaScript#Beginnings_at_Netscape)**, luego Netscape seria adquirido por SUN y por una estrategia de marketing el nombre final seria **Javascript**, al mismo tiempo Microsoft saco una version similar conocida como **[Jscript](https://en.wikipedia.org/wiki/JScript)** en su navegador Internet Explorer 3, para evitar que todos los navegadores hicieran versiones similares que llevarían a competir entre ellos, se decidió que lo mejor seria estandarizar el lenguaje, de ahi que la version de javascript 1.1 se envió a la *ECMA* (European Computer Manufacturers Association) que creo el comité *TC39* para estandarizar el lenguaje, asi es como se creo el estándar ECMA-262 en el que se define por primera vez el lenguaje **ECMAScript**, ECMAScript busca estandarizar el lenguaje a usar dentro de los navegadores. Javascript es una implementación del estándar ECMAScript.
+Javascript es un lenguaje muy poderoso, con una gran comunidad por detrás, e infinidad de Frameworks o librerías, este lenguaje fue creado por **Brendan Eich** con el nombre de **mocha** (no confundir con el Framework de testing [Mocha](https://mochajs.org/)) mientras se encontraba trabajando en Netscape, no pasaría mucho tiempo para que luego el lenguaje fuera renombrado a **[LiveScript](https://en.wikipedia.org/wiki/JavaScript#Beginnings_at_Netscape)**, luego Netscape seria adquirido por SUN y por una estrategia de marketing el nombre final sería **Javascript**, al mismo tiempo Microsoft saco una versión similar conocida como **[Jscript](https://en.wikipedia.org/wiki/JScript)** en su navegador Internet Explorer 3, para evitar que todos los navegadores hicieran versiones similares que llevarían a competir entre ellos, se decidió que lo mejor sería estandarizar el lenguaje, de ahí que la version de javascript 1.1 se envió a la *ECMA* (European Computer Manufacturers Association) que creo el comité *TC39* para estandarizar el lenguaje, así es como se creó el estándar ECMA-262 en el que se define por primera vez el lenguaje **ECMAScript**, ECMAScript busca estandarizar el lenguaje a usar dentro de los navegadores. Javascript es una implementación del estándar ECMAScript.
 
-Las actualizaciones del estándar son periódicas, se proponen y se revisan posibles nuevas características del lenguaje, ECMAScript con el paso del tiempo a tenido muchas versiones, una de las version mas conocida es la **ECMAScript 2015**, o **ES6**, que es una version de la especificación con muchas mejoras que su antecesora, las nuevas características propuestas que podrían llegar en una nueva version de ECMAScript son conocidas como **ES.NEXT**,
+Las actualizaciones del estándar son periódicas, se proponen y se revisan posibles nuevas características del lenguaje, ECMAScript con el paso del tiempo ha tenido muchas versiones, una de las versiones más conocida es la **ECMAScript 2015**, o **ES6**, que es una versión de la especificación con muchas mejoras que su antecesora, las nuevas características propuestas que podrían llegar en una nueva versión de ECMAScript son conocidas como **ES.NEXT**,
 
 Con esta introducción entendemos un poco mas sobre que es ECMAScript, y por que es importante cuando escribimos código Javascript, en este articulo iremos agregando los features que deberíamos conocer para empezar a crear aplicaciones, ya sea utilizando el estándar(ES5, ES6, ES7, ES8, etc.) o algún Framework, para el desarrollo de aplicaciones del lado del cliente(Angular, Vue, React).
 
