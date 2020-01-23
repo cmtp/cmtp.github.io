@@ -1,22 +1,22 @@
 <template>
   <div class="contact-container">
-    <div class="form">
+    <form class="form" @submit="submitContactForm">
       <div class="form-group">
         <label for="firstName">Your Name:</label>
-        <input type="text" name="firstName" id="firstName" class="input-form" autocomplete="off" />
+        <input type="text" name="firstName" id="firstName" class="input-form" autocomplete="off" v-model="name" />
       </div>
       <div class="form-group">
         <label for="email">Your Email:</label>
-        <input type="text" name="email" id="email" class="input-form" autocomplete="off" />
+        <input type="text" name="email" id="email" class="input-form" autocomplete="off" v-model="email"/>
       </div>
       <div class="form-group">
         <label for="message">Your Message:</label>
-        <textarea name="message" id="message" class="input-form" autocomplete="off" />
+        <textarea name="message" id="message" class="input-form" autocomplete="off" v-model="message" />
       </div>
       <div class="form-group">
-        <button class="btn">Enviar</button>
+        <input type="submit" class="btn" value="Enviar" />
       </div>
-    </div>
+    </form>
     <div class="contact-info">
       <div>
         <h2>Sigueme en mis redes Sociales</h2>
@@ -48,7 +48,52 @@
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+export default {
+  data() {
+    return {
+      name: null,
+      email: null,
+      message: null,
+      errors: []
+    }
+  },
+    mounted() {
+    // grecaptcha.ready(function() {
+    //     grecaptcha.execute('6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM', {action: 'homepage'}).then(function(token) {
+    //       console.log(token);
+    //     });;
+    //   });
+  },
+  methods: {
+    submitContactForm: function(e) {
+      e.preventDefault();
+      console.log(this.name);
+      console.log(this.email);
+      console.log(this.message);
+      if(this.name && this.email && this.message) {
+        let bodyForm = {
+            name: this.name,
+            email: this.email,
+            message: this.message,
+            token: null,
+            action: 'contactform'
+          };
+        grecaptcha.ready(function() {
+        grecaptcha.execute('6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM', {action: 'contactform'}).then(function(token) {
+          console.log(token);
+          bodyForm.token = token;
+          axios.post('http://localhost:3000/api/contact/request', bodyForm).then(function(res) {
+            console.log(res);
+          }).catch(function(err) {
+            console.log(err);
+          })
+        });
+      });
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>

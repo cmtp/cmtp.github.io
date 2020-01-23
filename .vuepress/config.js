@@ -20,7 +20,8 @@ module.exports = {
     ['link', { rel: 'apple-touch-icon', href: `/icons/icon-152x152.png` }],
     // ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
     ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-144x144.png' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+    ['script', { src: "https://www.google.com/recaptcha/api.js?render=6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM"}]
   ],
   ga: 'UA-135140895-1',
   serviceWorker: true,
