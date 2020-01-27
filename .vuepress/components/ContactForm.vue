@@ -83,10 +83,10 @@ export default {
         grecaptcha.execute('6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM', {action: 'contactform'}).then(function(token) {
           console.log(token);
           bodyForm.token = token;
-          axios.post('http://localhost:3000/api/contact/request', bodyForm).then(function(res) {
+          axios.post('http://localhost:3000/api/contact', bodyForm).then(function(res) {
             console.log(res);
           }).catch(function(err) {
-            console.log(err);
+            console.log(err.data);
           })
         });
       });
