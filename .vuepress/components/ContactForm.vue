@@ -3,15 +3,35 @@
     <form class="form" @submit="submitContactForm">
       <div class="form-group">
         <label for="firstName">Your Name:</label>
-        <input type="text" name="firstName" id="firstName" class="input-form" autocomplete="off" v-model="name" />
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          class="input-form"
+          autocomplete="off"
+          v-model="name"
+        />
       </div>
       <div class="form-group">
         <label for="email">Your Email:</label>
-        <input type="text" name="email" id="email" class="input-form" autocomplete="off" v-model="email"/>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="input-form"
+          autocomplete="off"
+          v-model="email"
+        />
       </div>
       <div class="form-group">
         <label for="message">Your Message:</label>
-        <textarea name="message" id="message" class="input-form" autocomplete="off" v-model="message" />
+        <textarea
+          name="message"
+          id="message"
+          class="input-form"
+          autocomplete="off"
+          v-model="message"
+        />
       </div>
       <div class="form-group">
         <input type="submit" class="btn" value="Enviar" />
@@ -21,12 +41,8 @@
       <div>
         <h2>Sigueme en mis redes Sociales</h2>
         <div class="place">
-          <p>
-            <i class="fa fa-map-marker"></i> Cochabamba, Bolivia
-          </p>
-          <p>
-            <i class="fa fa-envelope"></i> ctolapacheco@gmail.com
-          </p>
+          <p><i class="fa fa-map-marker"></i> Cochabamba, Bolivia</p>
+          <p><i class="fa fa-envelope"></i> ctolapacheco@gmail.com</p>
           <div class="social-networks">
             <a href="https://twitter.com/ctola91" class="twitter">
               <i class="fa fa-2x fa-twitter"></i>
@@ -49,6 +65,8 @@
 
 <script>
 import axios from "axios";
+import toastr from 'toastr';
+
 export default {
   data() {
     return {
@@ -56,40 +74,49 @@ export default {
       email: null,
       message: null,
       errors: []
-    }
+    };
   },
-    mounted() {
-    // grecaptcha.ready(function() {
-    //     grecaptcha.execute('6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM', {action: 'homepage'}).then(function(token) {
-    //       console.log(token);
-    //     });;
-    //   });
-  },
+  mounted() {},
   methods: {
-    submitContactForm: function(e) {
+    submitContactForm(e) {
       e.preventDefault();
-      console.log(this.name);
-      console.log(this.email);
-      console.log(this.message);
-      if(this.name && this.email && this.message) {
+      let name = this.name;
+      let email = this.email;
+      let message = this.message;
+      if (name && email && message) {
         let bodyForm = {
-            name: this.name,
-            email: this.email,
-            message: this.message,
-            token: null,
-            action: 'contactform'
-          };
+          name: name,
+          email: email,
+          message: message,
+          token: null,
+          action: "contactform"
+        };
         grecaptcha.ready(function() {
-        grecaptcha.execute('6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM', {action: 'contactform'}).then(function(token) {
-          console.log(token);
-          bodyForm.token = token;
-          axios.post('http://localhost:3000/api/contact', bodyForm).then(function(res) {
-            console.log(res);
-          }).catch(function(err) {
-            console.log(err.data);
-          })
+          grecaptcha
+            .execute("6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM", {
+              action: "contactform"
+            })
+            .then(function(token) {
+              console.log(token);
+              bodyForm.token = token;
+              axios
+                .post("http://localhost:3000/api/contact", bodyForm)
+                .then(function(res) {
+                  console.log(res.data);
+                  if (res.data.success) {
+                      name = '';
+                      email = '';
+                      message = '';
+                    toastr.success('Su solicitud de contacto se ha enviado, gracias por contactarse.', {timeOut: 5000});
+                  }
+                  
+                })
+                .catch(function(err) {
+                  toastr.error('Error al enviar el formulario, intente de nuevo', {timeOut: 5000});
+                  console.log(err);
+                });
+            });
         });
-      });
       }
     }
   }
