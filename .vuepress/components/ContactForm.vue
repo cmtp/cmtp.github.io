@@ -103,12 +103,10 @@ export default {
               action: "contactform"
             })
             .then(function(token) {
-              console.log(token);
               bodyForm.token = token;
               axios
                 .post("http://localhost:3000/api/contact", bodyForm)
                 .then(function(res) {
-                  console.log(res.data);
                   if (res.data.success) {
                       
                       toastr.Add({
