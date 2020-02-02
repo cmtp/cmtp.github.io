@@ -22,8 +22,6 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
     ['script', { src: "https://www.google.com/recaptcha/api.js?render=6LcCmNEUAAAAABtpW4cic7ehTh_aCpyFQWiiSZQM"}],
-    // ['link', {rel: "stylesheet", href: "/node_modules/toastr/build/toastr.min.css" }],
-    // ['script', { src: "/node_modules/toastr/build/toastr.min.js" }]
   ],
   ga: 'UA-135140895-1',
   serviceWorker: true,

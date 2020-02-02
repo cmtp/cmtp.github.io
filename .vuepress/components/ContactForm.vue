@@ -65,7 +65,6 @@
 
 <script>
 import axios from "axios";
-import toastr from 'toastr';
 
 export default {
   data() {
@@ -78,8 +77,15 @@ export default {
   },
   mounted() {},
   methods: {
+    cleanForm() {
+      this.name = '';
+      this.email = '';
+      this.message = '';
+    },
     submitContactForm(e) {
       e.preventDefault();
+      let cleanFormEvent = this.cleanForm;
+      let toastr = this.$toastr;
       let name = this.name;
       let email = this.email;
       let message = this.message;
@@ -104,15 +110,26 @@ export default {
                 .then(function(res) {
                   console.log(res.data);
                   if (res.data.success) {
-                      name = '';
-                      email = '';
-                      message = '';
-                    toastr.success('Su solicitud de contacto se ha enviado, gracias por contactarse.', {timeOut: 5000});
+                      
+                      toastr.Add({
+                        msg: 'Su solicitud de contacto se ha enviado, gracias por contactarse.', 
+                        title: 'Formulario de Contact',
+                        name: 'successContactForm',
+                        type: 'success',
+                        position: 'toast-bottom-full-width'
+                      });
+                      cleanFormEvent();
                   }
                   
                 })
                 .catch(function(err) {
-                  toastr.error('Error al enviar el formulario, intente de nuevo', {timeOut: 5000});
+                  toastr.Add({
+                        msg: 'Error al enviar el formulario, intente de nuevo', 
+                        title: 'Formulario de Contact',
+                        name: 'errorContactForm',
+                        type: 'error',
+                        position: 'toast-bottom-full-width'
+                      });
                   console.log(err);
                 });
             });
