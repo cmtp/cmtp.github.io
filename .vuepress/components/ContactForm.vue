@@ -15,7 +15,7 @@
       <div class="form-group">
         <label for="email">Your Email:</label>
         <input
-          type="text"
+          type="email"
           name="email"
           id="email"
           class="input-form"
@@ -29,6 +29,7 @@
           name="message"
           id="message"
           class="input-form"
+          minlength="20"
           autocomplete="off"
           v-model="message"
         />
@@ -105,7 +106,7 @@ export default {
             .then(function(token) {
               bodyForm.token = token;
               axios
-                .post("http://localhost:3000/api/contact", bodyForm)
+                .post("http://18.208.101.238/api/contact", bodyForm)
                 .then(function(res) {
                   if (res.data.success) {
                       
