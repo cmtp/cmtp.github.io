@@ -106,7 +106,7 @@ export default {
             .then(function(token) {
               bodyForm.token = token;
               axios
-                .post("http://18.208.101.238/api/contact", bodyForm)
+                .post("http://api.christiantola.me/api/contact", bodyForm)
                 .then(function(res) {
                   if (res.data.success) {
                       
