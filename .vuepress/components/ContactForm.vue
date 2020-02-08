@@ -79,9 +79,9 @@ export default {
   mounted() {},
   methods: {
     cleanForm() {
-      this.name = '';
-      this.email = '';
-      this.message = '';
+      this.name = "";
+      this.email = "";
+      this.message = "";
     },
     submitContactForm(e) {
       e.preventDefault();
@@ -109,26 +109,26 @@ export default {
                 .post("http://api.christiantola.me/api/contact", bodyForm)
                 .then(function(res) {
                   if (res.data.success) {
-                      
-                      toastr.Add({
-                        msg: 'Su solicitud de contacto se ha enviado, gracias por contactarse.', 
-                        title: 'Formulario de Contact',
-                        name: 'successContactForm',
-                        type: 'success',
-                        position: 'toast-bottom-full-width'
-                      });
-                      cleanFormEvent();
+                    toastr.Add({
+                      msg:
+                        "Su solicitud de contacto se ha enviado, gracias por contactarse.",
+                      title: "Formulario de Contact",
+                      name: "successContactForm",
+                      type: "success",
+                      position: "toast-bottom-full-width"
+                    });
+                    cleanFormEvent();
                   }
-                  
                 })
                 .catch(function(err) {
                   toastr.Add({
-                        msg: 'Error al enviar el formulario, intente de nuevo', 
-                        title: 'Formulario de Contact',
-                        name: 'errorContactForm',
-                        type: 'error',
-                        position: 'toast-bottom-full-width'
-                      });
+                    msg:
+                      "El formulario en este momento no se encuentra disponible, intente de nuevo o contactame por mis redes sociales",
+                    title: "Formulario de Contact",
+                    name: "errorContactForm",
+                    type: "warning",
+                    position: "toast-bottom-full-width"
+                  });
                   console.log(err);
                 });
             });
