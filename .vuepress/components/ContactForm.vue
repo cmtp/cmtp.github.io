@@ -106,7 +106,7 @@ export default {
             .then(function(token) {
               bodyForm.token = token;
               axios
-                .post("https://us-central1-my-blog-148f8.cloudfunctions.net/app/api/contacts", bodyForm)
+                .post("https://us-central1-my-blog-adc4a.cloudfunctions.net/app/api/contacts", bodyForm)
                 .then(function(res) {
                   if (res.data.success) {
                     toastr.Add({
