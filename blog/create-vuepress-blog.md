@@ -183,6 +183,10 @@ puedes ver mas sobre markdown en:
 
 Con estos conocimientos es posible agregar contenido a nuestro blog, en siguientes tutoriales veremos como estructurar las rutas de nuestras aplicaciones y agregar otras funcionalidades.
 
+He agregado un repositorio con el codigo usado para crear nuestro blog, puedes revisarlo en este repositorio de [github](https://github.com/cmtp/vuepress-blog/tree/v0.0.1).
+
+Si crees que este contenido puede ser relevante para otras personas ademas de ti compartelo!.
+
 Saludos!
 
 **Compártelo en tus redes Sociales!**
