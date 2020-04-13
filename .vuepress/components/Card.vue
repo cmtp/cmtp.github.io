@@ -42,7 +42,9 @@ export default {
   },
   methods: {
     date: function(post) {
-      let date = new Date(post.frontmatter.date).toLocaleDateString(
+      let d = new Date(this.$page.frontmatter.date)
+      d.setMinutes(d.getMinutes() + d.getTimezoneOffset());
+      let date = d.toLocaleDateString(
         this.$lang,
         { month: "long", year: "numeric", day: "numeric" }
       );
