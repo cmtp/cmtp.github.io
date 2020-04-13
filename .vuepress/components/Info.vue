@@ -24,7 +24,10 @@ export default {
       return this.$page.frontmatter.tags;
     },
     date() {
-      let date = new Date(this.$page.frontmatter.date).toLocaleDateString(
+      let d = new Date(this.$page.frontmatter.date)
+      d.setMinutes(d.getMinutes() + d.getTimezoneOffset());
+
+      let date = d.toLocaleDateString(
         this.$lang,
         { month: "long", year: "numeric", day: "numeric" }
       );
