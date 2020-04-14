@@ -2,7 +2,7 @@
   <div class="contact-container">
     <form class="form" @submit="submitContactForm">
       <div class="form-group">
-        <label for="firstName">Your Name:</label>
+        <label for="firstName">{{nameLabel}}:</label>
         <input
           type="text"
           name="firstName"
@@ -13,7 +13,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="email">Your Email:</label>
+        <label for="email">{{emailLabel}}:</label>
         <input
           type="email"
           name="email"
@@ -24,7 +24,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="message">Your Message:</label>
+        <label for="message">{{messageLabel}}:</label>
         <textarea
           name="message"
           id="message"
@@ -35,12 +35,12 @@
         />
       </div>
       <div class="form-group">
-        <input type="submit" class="btn" value="Enviar" />
+        <input type="submit" class="btn" :value="submitLabel" />
       </div>
     </form>
     <div class="contact-info">
       <div>
-        <h2>Sigueme en mis redes Sociales</h2>
+        <h2>{{ socialLabel }}</h2>
         <div class="place">
           <p><i class="fa fa-map-marker"></i> Cochabamba, Bolivia</p>
           <p><i class="fa fa-envelope"></i> ctolapacheco@gmail.com</p>
@@ -76,7 +76,25 @@ export default {
       errors: []
     };
   },
+  props: ["language"],
   mounted() {},
+  computed: {
+    emailLabel() {
+      return this.language === "en" ? 'Your Email' : 'Email';
+    },
+    nameLabel() {
+      return this.language === "en" ? 'Your Name' : 'Su Nombre';
+    },
+    messageLabel() {
+      return this.language === "en" ? 'Your Message' : 'Mensaje';
+    },
+    submitLabel() {
+      return this.language === "en" ? 'Send' : 'Enviar';
+    },
+    socialLabel() {
+      return this.language === "en" ? 'Follow my Social Networks' : 'Sigueme en mis redes Sociales';
+    }
+  },
   methods: {
     cleanForm() {
       this.name = "";

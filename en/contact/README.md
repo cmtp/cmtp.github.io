@@ -2,10 +2,11 @@
 title: Contact
 layout: BlogLayout
 ---
+# Contact
 
 Send me a message!
 
-<ContactForm />
+<ContactForm language="en" />
 
 **Share on your social networks!**
 <SocialButtons />

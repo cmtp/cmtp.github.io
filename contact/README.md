@@ -6,7 +6,7 @@ layout: BlogLayout
 
 Me gustaria escuchar sobre ti:
 
-<ContactForm />
+<ContactForm language="es" />
 
 **Compartelo en tus redes Sociales!**
 <SocialButtons />
