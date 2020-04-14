@@ -44,16 +44,17 @@ meta:
 
 <Banner url="BannerTemplateVuePress.jpg" alt="Blog with Vue.js"/>
 
-[VuePress](https://vuepress.vuejs.org/) is a static site generator based on Vue.js Framwework, it provide a minimalistic generator of static sites with support of theming that is based on Vue Components, Plugin API, and 
-provee un generador minimalista de sitios estáticos con soporte de temas basado en componentes de Vue.js, una API para el soporte de plugins, y un tema por defecto optimizado para la escritura de documentación técnica, originalmente creado para soportar la documentación del framework Vue.js y sus proyectos secundarios.
+[VuePress](https://vuepress.vuejs.org/) is a static site generator based on Vue.js Framwework, it provide a minimalistic generator of static sites with support of theming that is based on Vue Components, Plugin API, and default optimized theme to write technical documentation, it was created to support Vue.js Documentation and sub-projects.
 
 ![vuepress](../../blog/images/create-vuepress-blog/vuepress.png)
 
-## Como funciona
+## How it works
 
-Un sitio en vuepress es en realidad una **Single page Application (SPA)** que utiliza [Vue.js](https://vuejs.org), [vue-router](https://router.vuejs.org/) y [Webpack](https://webpack.js.org/), puedes utilizar tu experiencia en vue.js y [vue-devtools](https://github.com/vuejs/vue-devtools) para trabajar con vuepress
+A vuepress site is a **Single Page Application** that uses [Vue.js](https://vuejs.org), [vue-router](https://router.vuejs.org/) and [Webpack](https://webpack.js.org/), you can use your experience with Vue.js and [vue-devtools](https://github.com/vuejs/vue-devtools) to work with vuepress.
 
-## Iniciar un proyecto
+## Start a project with VuePress
+
+Start a Vue.js is easy, we use **markdown** to write content that will be rendered to static HTML, in our website, this allows to write the content in our blog, that don't need to write html tags for HTML to render the content, vuepress 
 
 Iniciar en vue.js es muy sencillo, utilizaremos **markdown** para escribir el contenido que será convertido a HTML estático en nuestro sitio web, esto nos facilitara la escritura de nuestros blogs ya que no tendremos que preocuparnos en escribir los tags correctos de HTML para renderizar el contenido, vuepress lo realizara por nosotros.
 
