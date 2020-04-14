@@ -3,9 +3,9 @@ title: Contact
 layout: BlogLayout
 ---
 
-Me gustaria escuchar sobre ti:
+Send me a message!
 
 <ContactForm />
 
-**Compartelo en tus redes Sociales!**
+**Share on your social networks!**
 <SocialButtons />
