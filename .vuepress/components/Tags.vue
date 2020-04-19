@@ -62,6 +62,18 @@ export default {
   justify-content: space-between;
 }
 .blog-item {
+  width: 100%;
+}
+/* large desktop */
+@media screen and (min-width: 900px) {
+.blog-item {
   width: 30%;
+}
+}
+/* tablet */
+@media (max-width: 899px) and (min-width: 600px) {
+  .blog-item {
+    width: 45%;
+  }
 }
 </style>
